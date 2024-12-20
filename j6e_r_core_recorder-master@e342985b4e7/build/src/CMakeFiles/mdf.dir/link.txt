@@ -1,2 +1,0 @@
-C:\Users\WBG3SZH\Desktop\SoftWare\mingw64\bin\ar.exe qc libmdf.a CMakeFiles/mdf.dir/mtc_mcu_mf4_writer.cpp.obj
-C:\Users\WBG3SZH\Desktop\SoftWare\mingw64\bin\ranlib.exe libmdf.a

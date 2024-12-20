@@ -1,3 +1,0 @@
-C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\Mf4Writer.dir/objects.a
-C:\Users\WBG3SZH\Desktop\SoftWare\mingw64\bin\ar.exe qc CMakeFiles\Mf4Writer.dir/objects.a @CMakeFiles\Mf4Writer.dir\objects1.rsp
-C:\Users\WBG3SZH\Desktop\SoftWare\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Mf4Writer.dir/objects.a -Wl,--no-whole-archive -o Mf4Writer.exe -Wl,--out-implib,libMf4Writer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Mf4Writer.dir\linkLibs.rsp

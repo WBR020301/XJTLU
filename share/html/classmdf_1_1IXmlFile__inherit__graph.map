@@ -1,5 +1,0 @@
-<map id="mdf::IXmlFile" name="mdf::IXmlFile">
-<area shape="rect" id="node1" title="Interface class that defines an XML parser." alt="" coords="58,5,246,332"/>
-<area shape="rect" id="node2" href="$classmdf_1_1ExpatXml.html" title="Simple wrapper around the EXPAT parser." alt="" coords="5,380,147,575"/>
-<area shape="rect" id="node3" href="$classmdf_1_1WriteXml.html" title=" " alt="" coords="171,439,287,516"/>
-</map>
