@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\at4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\bigbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\blockproperty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ca4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\canmessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\cc4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\cg4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\cgrange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ch4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\channelobserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\cn4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\cryptoutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\datablock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\datalistblock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\dbchelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\dg4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\dgrange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\di4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\dl4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\dt4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\dv4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\dz4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\etag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ev4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\expatxml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\fh4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\hd4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\hl4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\iattachment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\iblock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ichannelarray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ichannelconversion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ichannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ichannelgroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ichannelhierarchy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ichannelobserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\idatagroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\idblock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ievent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ifilehistory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\iheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\imetadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\isampleobserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\isamplereduction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\isourceinformation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ixmlfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ixmlnode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ld4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\littlebuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\md4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdf4file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdf4timestamp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdf4writer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdfblock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdfbuslogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdfconverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdffactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdffile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdfhelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdflogstream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdfreader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\mdfwriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\platform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\rd4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\readcache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\ri4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\rv4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\sd4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\si4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\sr4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\timestamp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\tx4block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\vlsddata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\writexml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\xmlnode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\src\zlibutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdflib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1838467E-83B1-3BBB-89F9-DE244CD05159}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

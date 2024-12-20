@@ -1,0 +1,106 @@
+\hypertarget{cryptoutil_8cpp}{}\doxysection{src/cryptoutil.cpp File Reference}
+\label{cryptoutil_8cpp}\index{src/cryptoutil.cpp@{src/cryptoutil.cpp}}
+{\ttfamily \#include \char`\"{}mdf/cryptoutil.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include \char`\"{}mdf/mdflogstream.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}platform.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+Include dependency graph for cryptoutil.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cryptoutil_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacemdf}{mdf}}
+\begin{DoxyCompactList}\small\item\em mdflib \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{cryptoutil_8cpp_a96d73bbd7af15cb1fc38c3f4a3bd82e9}{F}}(x,  y,  z)~((z) $^\wedge$ ((x) \& ((y) $^\wedge$ (z))))
+\item 
+\#define \mbox{\hyperlink{cryptoutil_8cpp_ad96b7cf3182ce2ba85e5a7a93b12c441}{G}}(x,  y,  z)~((y) $^\wedge$ ((z) \& ((x) $^\wedge$ (y))))
+\item 
+\#define \mbox{\hyperlink{cryptoutil_8cpp_ae42219072d798876e6b08e6b78614ff6}{H}}(x,  y,  z)~((x) $^\wedge$ (y) $^\wedge$ (z))
+\item 
+\#define \mbox{\hyperlink{cryptoutil_8cpp_ac0eafdc9ee161b71e7af98af736952fd}{I}}(x,  y,  z)~((y) $^\wedge$ ((x) $\vert$ $\sim$(z)))
+\item 
+\#define \mbox{\hyperlink{cryptoutil_8cpp_a642b3a091bb90dabdf2abb865fefab69}{STEP}}(f,  a,  b,  c,  d,  x,  t,  s)
+\item 
+\#define \mbox{\hyperlink{cryptoutil_8cpp_a8be4bf419fd5ebe5cba399d782188517}{SET}}(n)
+\item 
+\#define \mbox{\hyperlink{cryptoutil_8cpp_a22c5b6b56a260ea33a06c9fdebed523e}{GET}}(n)~(ctx-\/$>$block\mbox{[}(n)\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacemdf_aeb78ebb2c6a5a61f14d37a05b7afd20a}{mdf\+::\+Create\+Md5\+File\+Checksum}} (const std\+::string \&file, std\+::vector$<$ uint8\+\_\+t $>$ \&md5)
+\item 
+std\+::string \mbox{\hyperlink{namespacemdf_a1173d96d8ea953eb45c110ac550ce628}{mdf\+::\+Create\+Md5\+File\+String}} (const std\+::string \&file)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{cryptoutil_8cpp_a96d73bbd7af15cb1fc38c3f4a3bd82e9}\label{cryptoutil_8cpp_a96d73bbd7af15cb1fc38c3f4a3bd82e9}} 
+\index{cryptoutil.cpp@{cryptoutil.cpp}!F@{F}}
+\index{F@{F}!cryptoutil.cpp@{cryptoutil.cpp}}
+\doxysubsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily \#define F(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~((z) $^\wedge$ ((x) \& ((y) $^\wedge$ (z))))}
+
+\mbox{\Hypertarget{cryptoutil_8cpp_ad96b7cf3182ce2ba85e5a7a93b12c441}\label{cryptoutil_8cpp_ad96b7cf3182ce2ba85e5a7a93b12c441}} 
+\index{cryptoutil.cpp@{cryptoutil.cpp}!G@{G}}
+\index{G@{G}!cryptoutil.cpp@{cryptoutil.cpp}}
+\doxysubsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily \#define G(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~((y) $^\wedge$ ((z) \& ((x) $^\wedge$ (y))))}
+
+\mbox{\Hypertarget{cryptoutil_8cpp_a22c5b6b56a260ea33a06c9fdebed523e}\label{cryptoutil_8cpp_a22c5b6b56a260ea33a06c9fdebed523e}} 
+\index{cryptoutil.cpp@{cryptoutil.cpp}!GET@{GET}}
+\index{GET@{GET}!cryptoutil.cpp@{cryptoutil.cpp}}
+\doxysubsubsection{\texorpdfstring{GET}{GET}}
+{\footnotesize\ttfamily \#define GET(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})~(ctx-\/$>$block\mbox{[}(n)\mbox{]})}
+
+\mbox{\Hypertarget{cryptoutil_8cpp_ae42219072d798876e6b08e6b78614ff6}\label{cryptoutil_8cpp_ae42219072d798876e6b08e6b78614ff6}} 
+\index{cryptoutil.cpp@{cryptoutil.cpp}!H@{H}}
+\index{H@{H}!cryptoutil.cpp@{cryptoutil.cpp}}
+\doxysubsubsection{\texorpdfstring{H}{H}}
+{\footnotesize\ttfamily \#define H(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~((x) $^\wedge$ (y) $^\wedge$ (z))}
+
+\mbox{\Hypertarget{cryptoutil_8cpp_ac0eafdc9ee161b71e7af98af736952fd}\label{cryptoutil_8cpp_ac0eafdc9ee161b71e7af98af736952fd}} 
+\index{cryptoutil.cpp@{cryptoutil.cpp}!I@{I}}
+\index{I@{I}!cryptoutil.cpp@{cryptoutil.cpp}}
+\doxysubsubsection{\texorpdfstring{I}{I}}
+{\footnotesize\ttfamily \#define I(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~((y) $^\wedge$ ((x) $\vert$ $\sim$(z)))}
+
+\mbox{\Hypertarget{cryptoutil_8cpp_a8be4bf419fd5ebe5cba399d782188517}\label{cryptoutil_8cpp_a8be4bf419fd5ebe5cba399d782188517}} 
+\index{cryptoutil.cpp@{cryptoutil.cpp}!SET@{SET}}
+\index{SET@{SET}!cryptoutil.cpp@{cryptoutil.cpp}}
+\doxysubsubsection{\texorpdfstring{SET}{SET}}
+{\footnotesize\ttfamily \#define SET(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  (ctx-\/>block[(n)] = (MD5\_u32)ptr[(n)*4] | ((MD5\_u32)ptr[(n)*4 + 1] << 8) | \(\backslash\)}
+\DoxyCodeLine{                     ((MD5\_u32)ptr[(n)*4 + 2] << 16) |                      \(\backslash\)}
+\DoxyCodeLine{                     ((MD5\_u32)ptr[(n)*4 + 3] << 24))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{cryptoutil_8cpp_a642b3a091bb90dabdf2abb865fefab69}\label{cryptoutil_8cpp_a642b3a091bb90dabdf2abb865fefab69}} 
+\index{cryptoutil.cpp@{cryptoutil.cpp}!STEP@{STEP}}
+\index{STEP@{STEP}!cryptoutil.cpp@{cryptoutil.cpp}}
+\doxysubsubsection{\texorpdfstring{STEP}{STEP}}
+{\footnotesize\ttfamily \#define STEP(\begin{DoxyParamCaption}\item[{}]{f,  }\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{x,  }\item[{}]{t,  }\item[{}]{s }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  (a) += f((b), (c), (d)) + (x) + (t);                     \(\backslash\)}
+\DoxyCodeLine{  (a) = (((a) << (s)) | (((a)\&0xffffffff) >> (32 -\/ (s)))); \(\backslash\)}
+\DoxyCodeLine{  (a) += (b);}
+
+\end{DoxyCode}

@@ -1,0 +1,35 @@
+\hypertarget{platform_8cpp}{}\doxysection{src/platform.cpp File Reference}
+\label{platform_8cpp}\index{src/platform.cpp@{src/platform.cpp}}
+{\ttfamily \#include \char`\"{}platform.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$strings.\+h$>$}\newline
+{\ttfamily \#include $<$cerrno$>$}\newline
+{\ttfamily \#include \char`\"{}mdf/mdfhelper.\+h\char`\"{}}\newline
+Include dependency graph for platform.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{platform_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacePlatform}{Platform}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacePlatform_ab2b04dbcdb810f59df0085fac319aa15}{Platform\+::stricmp}} (const char $\ast$\+\_\+\+\_\+s1, const char $\ast$\+\_\+\+\_\+s2)
+\item 
+int \mbox{\hyperlink{namespacePlatform_a2992798b3b8e8f31469b1765367d5d1d}{Platform\+::strnicmp}} (const char $\ast$\+\_\+\+\_\+s1, const char $\ast$\+\_\+\+\_\+s2, size\+\_\+t \+\_\+\+\_\+n)
+\item 
+void \mbox{\hyperlink{namespacePlatform_af9ade02c10277694f463de322b1e3387}{Platform\+::strerror}} (int \+\_\+\+\_\+errnum, char $\ast$\+\_\+\+\_\+buf, size\+\_\+t \+\_\+\+\_\+buflen)
+\item 
+int64\+\_\+t \mbox{\hyperlink{namespacePlatform_a44d24f50ecb5210a146260eda853ffd0}{Platform\+::ftell64}} (std\+::\+FILE $\ast$\+\_\+\+\_\+stream)
+\item 
+int \mbox{\hyperlink{namespacePlatform_a82c1537f47c6270514c977d48f062d88}{Platform\+::fseek64}} (std\+::\+FILE $\ast$\+\_\+\+\_\+stream, int64\+\_\+t \+\_\+\+\_\+off, int \+\_\+\+\_\+whence)
+\item 
+int \mbox{\hyperlink{namespacePlatform_a247e6fb8be647f320c477950896c662f}{Platform\+::fileopen}} (std\+::\+FILE $\ast$$\ast$out, const char $\ast$\+\_\+\+\_\+restrict \+\_\+\+\_\+filename, const char $\ast$\+\_\+\+\_\+restrict \+\_\+\+\_\+modes)
+\end{DoxyCompactItemize}

@@ -1,0 +1,395 @@
+\hypertarget{classmdf_1_1detail_1_1Cc4Block}{}\doxysection{mdf\+::detail\+::Cc4\+Block Class Reference}
+\label{classmdf_1_1detail_1_1Cc4Block}\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+
+
+{\ttfamily \#include $<$cc4block.\+h$>$}
+
+
+
+Inheritance diagram for mdf\+::detail\+::Cc4\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmdf_1_1detail_1_1Cc4Block__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for mdf\+::detail\+::Cc4\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmdf_1_1detail_1_1Cc4Block__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a4d9338e7b5e1d22f37f43de640453acb}{Ref\+List}} = std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_aa8523cb42bad1e338aec9356d9df21a2}{Cc4\+Block}} ()
+\item 
+int64\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_ac40f0e1b8bbc234fdf6164e0380c6a70}{Index}} () const override
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_ac036e54b7d053a59a748c7ed0f759b8c}{Block\+Type}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a966169094b0973095993b3716cb19af7}{Name}} (const std\+::string \&name) override
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a29bf8041196b57d9d146963aa59e2e6a}{Name}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_ae8c7feb4d96ca39103f4cd2f6e7890fa}{Unit}} (const std\+::string \&unit) override
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a4a14b378d79fe473a78e73db7f2f4acb}{Unit}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_ae6f3534cedc02ff4f9941fc7b431ac4a}{Description}} (const std\+::string \&desc) override
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a8c88fdca422dd46626e8522e3ccf185f}{Description}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a0ce934ee29e42bfd0c7214dd94874d98}{Type}} (Conversion\+Type type) override
+\item 
+Conversion\+Type \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a6066f04a2c7620e5a27e4fbdfb291b2c}{Type}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a4d2100a4bcaf8d6ea384fd0a6bcc32c0}{Decimals}} (uint8\+\_\+t decimals) override
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a740bf9bb41a2b78a3ecc55d1e9e6a6a2}{Decimals}} () const override
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a4713ea39457c38a0d8df424664a8f8be}{Is\+Unit\+Valid}} () const override
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a897b078f9fcabd2af646d325352a5bf4}{Is\+Decimal\+Used}} () const override
+\item 
+IChannel\+Conversion $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a1f54a7b9af081039e3201435e854ec0f}{Create\+Inverse}} () override
+\item 
+IChannel\+Conversion $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a326a6f8f2836af78faf86a7dd64892b0}{Inverse}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a62dfbbb70649d7d04cf5fd8f474a03ff}{Range}} (double min, double max) override
+\item 
+std\+::optional$<$ std\+::pair$<$ double, double $>$ $>$ \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a70bc030912bd6b1dba99c1063ac2bd05}{Range}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a21803cdfa0f274cdb417c2e561987ea7}{Flags}} (uint16\+\_\+t flags) override
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_aae0aac4d50d7294e5fef8f2a6014d3bb}{Flags}} () const override
+\item 
+IMeta\+Data $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a0a2c5a7c4db67805df33a116d0780b45}{Create\+Meta\+Data}} () override
+\item 
+IMeta\+Data $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a7704d201405f3196425c2734eb9248c7}{Meta\+Data}} () const override
+\item 
+const \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block}{Cc4\+Block}} $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a96e7be3e838fdc35e0fdce0bcdd0460c}{Cc}} () const
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a71ec426f142577264528fa8fa246ccca}{Nof\+References}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_af03e552e654ce6525a0cd6a99aced041}{Reference}} (uint16\+\_\+t index, const std\+::string \&text) override
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_ae32178402c86481c5fe652e4e6f71b38}{Reference}} (uint16\+\_\+t index) const override
+\item 
+const \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a4d9338e7b5e1d22f37f43de640453acb}{Ref\+List}} \& \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a004e8ec6235b39cdae2ca4bebcd7a42e}{References}} () const
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_acb48b423e38b740be3a603553c446e96}{Find}} (int64\+\_\+t index) const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_aa4d460f901b414780cf3e194fbde7a63}{Get\+Block\+Property}} (\mbox{\hyperlink{namespacemdf_1_1detail_a77d8f89f34dbdad6659eaa35fc6d5501}{Block\+Property\+List}} \&dest) const override
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a3208545e3115b5d3b854917cb69481f9}{Read}} (std\+::\+FILE $\ast$file) override
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a523945ce7d16cf9026def856d602463b}{Write}} (std\+::\+FILE $\ast$file) override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a5230a0ef6a4e054c2ecca8aa490586c3}{Formula}} (const std\+::string \&formula) override
+\item 
+const std\+::string \& \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a450e70763f18daa13deed97c8b3071e1}{Formula}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a12580086a6cc6bdcae3f1217e4c94677}{Convert\+Value\+To\+Text}} (double channel\+\_\+value, std\+::string \&eng\+\_\+value) const override
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a3f6b3b09b1f8626ad85ed452003c6f98}{Convert\+Value\+Range\+To\+Text}} (double channel\+\_\+value, std\+::string \&eng\+\_\+value) const override
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a2d6ca4c457d507cfeee91912adab2297}{Convert\+Text\+To\+Value}} (const std\+::string \&channel\+\_\+value, double \&eng\+\_\+value) const override
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a318dafdba506cf67a8d2422b4fc3c302}{Convert\+Text\+To\+Translation}} (const std\+::string \&channel\+\_\+value, std\+::string \&eng\+\_\+value) const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a4d9338e7b5e1d22f37f43de640453acb}\label{classmdf_1_1detail_1_1Cc4Block_a4d9338e7b5e1d22f37f43de640453acb}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!RefList@{RefList}}
+\index{RefList@{RefList}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{RefList}{RefList}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a4d9338e7b5e1d22f37f43de640453acb}{mdf\+::detail\+::\+Cc4\+Block\+::\+Ref\+List}} =  std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}}$>$ $>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_aa8523cb42bad1e338aec9356d9df21a2}\label{classmdf_1_1detail_1_1Cc4Block_aa8523cb42bad1e338aec9356d9df21a2}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Cc4Block@{Cc4Block}}
+\index{Cc4Block@{Cc4Block}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Cc4Block()}{Cc4Block()}}
+{\footnotesize\ttfamily mdf\+::detail\+::\+Cc4\+Block\+::\+Cc4\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_ac036e54b7d053a59a748c7ed0f759b8c}\label{classmdf_1_1detail_1_1Cc4Block_ac036e54b7d053a59a748c7ed0f759b8c}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!BlockType@{BlockType}}
+\index{BlockType@{BlockType}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{BlockType()}{BlockType()}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Cc4\+Block\+::\+Block\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_af5e322b3f10e54aa8caac98f0cb272ce}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a96e7be3e838fdc35e0fdce0bcdd0460c}\label{classmdf_1_1detail_1_1Cc4Block_a96e7be3e838fdc35e0fdce0bcdd0460c}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Cc@{Cc}}
+\index{Cc@{Cc}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Cc()}{Cc()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block}{Cc4\+Block}}$\ast$ mdf\+::detail\+::\+Cc4\+Block\+::\+Cc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a318dafdba506cf67a8d2422b4fc3c302}\label{classmdf_1_1detail_1_1Cc4Block_a318dafdba506cf67a8d2422b4fc3c302}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!ConvertTextToTranslation@{ConvertTextToTranslation}}
+\index{ConvertTextToTranslation@{ConvertTextToTranslation}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{ConvertTextToTranslation()}{ConvertTextToTranslation()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Cc4\+Block\+::\+Convert\+Text\+To\+Translation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{channel\+\_\+value,  }\item[{std\+::string \&}]{eng\+\_\+value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a2d6ca4c457d507cfeee91912adab2297}\label{classmdf_1_1detail_1_1Cc4Block_a2d6ca4c457d507cfeee91912adab2297}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!ConvertTextToValue@{ConvertTextToValue}}
+\index{ConvertTextToValue@{ConvertTextToValue}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{ConvertTextToValue()}{ConvertTextToValue()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Cc4\+Block\+::\+Convert\+Text\+To\+Value (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{channel\+\_\+value,  }\item[{double \&}]{eng\+\_\+value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a3f6b3b09b1f8626ad85ed452003c6f98}\label{classmdf_1_1detail_1_1Cc4Block_a3f6b3b09b1f8626ad85ed452003c6f98}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!ConvertValueRangeToText@{ConvertValueRangeToText}}
+\index{ConvertValueRangeToText@{ConvertValueRangeToText}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{ConvertValueRangeToText()}{ConvertValueRangeToText()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Cc4\+Block\+::\+Convert\+Value\+Range\+To\+Text (\begin{DoxyParamCaption}\item[{double}]{channel\+\_\+value,  }\item[{std\+::string \&}]{eng\+\_\+value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a12580086a6cc6bdcae3f1217e4c94677}\label{classmdf_1_1detail_1_1Cc4Block_a12580086a6cc6bdcae3f1217e4c94677}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!ConvertValueToText@{ConvertValueToText}}
+\index{ConvertValueToText@{ConvertValueToText}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{ConvertValueToText()}{ConvertValueToText()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Cc4\+Block\+::\+Convert\+Value\+To\+Text (\begin{DoxyParamCaption}\item[{double}]{channel\+\_\+value,  }\item[{std\+::string \&}]{eng\+\_\+value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a1f54a7b9af081039e3201435e854ec0f}\label{classmdf_1_1detail_1_1Cc4Block_a1f54a7b9af081039e3201435e854ec0f}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!CreateInverse@{CreateInverse}}
+\index{CreateInverse@{CreateInverse}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{CreateInverse()}{CreateInverse()}}
+{\footnotesize\ttfamily IChannel\+Conversion $\ast$ mdf\+::detail\+::\+Cc4\+Block\+::\+Create\+Inverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a0a2c5a7c4db67805df33a116d0780b45}\label{classmdf_1_1detail_1_1Cc4Block_a0a2c5a7c4db67805df33a116d0780b45}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!CreateMetaData@{CreateMetaData}}
+\index{CreateMetaData@{CreateMetaData}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{CreateMetaData()}{CreateMetaData()}}
+{\footnotesize\ttfamily IMeta\+Data$\ast$ mdf\+::detail\+::\+Cc4\+Block\+::\+Create\+Meta\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a4ef06ab5c0a446e8c8ff18b5772f1216}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a740bf9bb41a2b78a3ecc55d1e9e6a6a2}\label{classmdf_1_1detail_1_1Cc4Block_a740bf9bb41a2b78a3ecc55d1e9e6a6a2}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Decimals@{Decimals}}
+\index{Decimals@{Decimals}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Decimals()}{Decimals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint8\+\_\+t mdf\+::detail\+::\+Cc4\+Block\+::\+Decimals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a4d2100a4bcaf8d6ea384fd0a6bcc32c0}\label{classmdf_1_1detail_1_1Cc4Block_a4d2100a4bcaf8d6ea384fd0a6bcc32c0}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Decimals@{Decimals}}
+\index{Decimals@{Decimals}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Decimals()}{Decimals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Cc4\+Block\+::\+Decimals (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{decimals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a8c88fdca422dd46626e8522e3ccf185f}\label{classmdf_1_1detail_1_1Cc4Block_a8c88fdca422dd46626e8522e3ccf185f}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Description@{Description}}
+\index{Description@{Description}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Description()}{Description()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Cc4\+Block\+::\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_ae6f3534cedc02ff4f9941fc7b431ac4a}\label{classmdf_1_1detail_1_1Cc4Block_ae6f3534cedc02ff4f9941fc7b431ac4a}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Description@{Description}}
+\index{Description@{Description}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Description()}{Description()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Cc4\+Block\+::\+Description (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_acb48b423e38b740be3a603553c446e96}\label{classmdf_1_1detail_1_1Cc4Block_acb48b423e38b740be3a603553c446e96}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Find@{Find}}
+\index{Find@{Find}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $\ast$ mdf\+::detail\+::\+Cc4\+Block\+::\+Find (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a435d646c7fe6f4f39153daacdae01824}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_aae0aac4d50d7294e5fef8f2a6014d3bb}\label{classmdf_1_1detail_1_1Cc4Block_aae0aac4d50d7294e5fef8f2a6014d3bb}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Flags@{Flags}}
+\index{Flags@{Flags}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Flags()}{Flags()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint16\+\_\+t mdf\+::detail\+::\+Cc4\+Block\+::\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a21803cdfa0f274cdb417c2e561987ea7}\label{classmdf_1_1detail_1_1Cc4Block_a21803cdfa0f274cdb417c2e561987ea7}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Flags@{Flags}}
+\index{Flags@{Flags}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Flags()}{Flags()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Cc4\+Block\+::\+Flags (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a450e70763f18daa13deed97c8b3071e1}\label{classmdf_1_1detail_1_1Cc4Block_a450e70763f18daa13deed97c8b3071e1}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Formula@{Formula}}
+\index{Formula@{Formula}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Formula()}{Formula()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::string \& mdf\+::detail\+::\+Cc4\+Block\+::\+Formula (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a5230a0ef6a4e054c2ecca8aa490586c3}\label{classmdf_1_1detail_1_1Cc4Block_a5230a0ef6a4e054c2ecca8aa490586c3}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Formula@{Formula}}
+\index{Formula@{Formula}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Formula()}{Formula()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Cc4\+Block\+::\+Formula (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{formula }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_aa4d460f901b414780cf3e194fbde7a63}\label{classmdf_1_1detail_1_1Cc4Block_aa4d460f901b414780cf3e194fbde7a63}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!GetBlockProperty@{GetBlockProperty}}
+\index{GetBlockProperty@{GetBlockProperty}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{GetBlockProperty()}{GetBlockProperty()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Cc4\+Block\+::\+Get\+Block\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemdf_1_1detail_a77d8f89f34dbdad6659eaa35fc6d5501}{Block\+Property\+List}} \&}]{dest }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a6ac894e32ba659b83a07b1f07a454e32}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_ac40f0e1b8bbc234fdf6164e0380c6a70}\label{classmdf_1_1detail_1_1Cc4Block_ac40f0e1b8bbc234fdf6164e0380c6a70}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Index@{Index}}
+\index{Index@{Index}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily int64\+\_\+t mdf\+::detail\+::\+Cc4\+Block\+::\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a712aed78b0f11c4105c2b65ecc79cc84}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a326a6f8f2836af78faf86a7dd64892b0}\label{classmdf_1_1detail_1_1Cc4Block_a326a6f8f2836af78faf86a7dd64892b0}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Inverse()}{Inverse()}}
+{\footnotesize\ttfamily IChannel\+Conversion $\ast$ mdf\+::detail\+::\+Cc4\+Block\+::\+Inverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a897b078f9fcabd2af646d325352a5bf4}\label{classmdf_1_1detail_1_1Cc4Block_a897b078f9fcabd2af646d325352a5bf4}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!IsDecimalUsed@{IsDecimalUsed}}
+\index{IsDecimalUsed@{IsDecimalUsed}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{IsDecimalUsed()}{IsDecimalUsed()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Cc4\+Block\+::\+Is\+Decimal\+Used (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a4713ea39457c38a0d8df424664a8f8be}\label{classmdf_1_1detail_1_1Cc4Block_a4713ea39457c38a0d8df424664a8f8be}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!IsUnitValid@{IsUnitValid}}
+\index{IsUnitValid@{IsUnitValid}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{IsUnitValid()}{IsUnitValid()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Cc4\+Block\+::\+Is\+Unit\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a7704d201405f3196425c2734eb9248c7}\label{classmdf_1_1detail_1_1Cc4Block_a7704d201405f3196425c2734eb9248c7}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!MetaData@{MetaData}}
+\index{MetaData@{MetaData}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{MetaData()}{MetaData()}}
+{\footnotesize\ttfamily IMeta\+Data$\ast$ mdf\+::detail\+::\+Cc4\+Block\+::\+Meta\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a9d2cd0b498a8aaa2fd5d6009304ab82f}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a29bf8041196b57d9d146963aa59e2e6a}\label{classmdf_1_1detail_1_1Cc4Block_a29bf8041196b57d9d146963aa59e2e6a}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Name@{Name}}
+\index{Name@{Name}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Name()}{Name()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Cc4\+Block\+::\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a966169094b0973095993b3716cb19af7}\label{classmdf_1_1detail_1_1Cc4Block_a966169094b0973095993b3716cb19af7}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Name@{Name}}
+\index{Name@{Name}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Name()}{Name()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Cc4\+Block\+::\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a71ec426f142577264528fa8fa246ccca}\label{classmdf_1_1detail_1_1Cc4Block_a71ec426f142577264528fa8fa246ccca}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!NofReferences@{NofReferences}}
+\index{NofReferences@{NofReferences}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{NofReferences()}{NofReferences()}}
+{\footnotesize\ttfamily uint16\+\_\+t mdf\+::detail\+::\+Cc4\+Block\+::\+Nof\+References (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a70bc030912bd6b1dba99c1063ac2bd05}\label{classmdf_1_1detail_1_1Cc4Block_a70bc030912bd6b1dba99c1063ac2bd05}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Range@{Range}}
+\index{Range@{Range}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Range()}{Range()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::optional$<$ std\+::pair$<$ double, double $>$ $>$ mdf\+::detail\+::\+Cc4\+Block\+::\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a62dfbbb70649d7d04cf5fd8f474a03ff}\label{classmdf_1_1detail_1_1Cc4Block_a62dfbbb70649d7d04cf5fd8f474a03ff}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Range@{Range}}
+\index{Range@{Range}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Range()}{Range()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Cc4\+Block\+::\+Range (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a3208545e3115b5d3b854917cb69481f9}\label{classmdf_1_1detail_1_1Cc4Block_a3208545e3115b5d3b854917cb69481f9}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Read@{Read}}
+\index{Read@{Read}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Cc4\+Block\+::\+Read (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a3d958d9ba4a5f3552afa61018370e82d}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_ae32178402c86481c5fe652e4e6f71b38}\label{classmdf_1_1detail_1_1Cc4Block_ae32178402c86481c5fe652e4e6f71b38}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Reference@{Reference}}
+\index{Reference@{Reference}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Reference()}{Reference()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Cc4\+Block\+::\+Reference (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_af03e552e654ce6525a0cd6a99aced041}\label{classmdf_1_1detail_1_1Cc4Block_af03e552e654ce6525a0cd6a99aced041}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Reference@{Reference}}
+\index{Reference@{Reference}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Reference()}{Reference()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Cc4\+Block\+::\+Reference (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{index,  }\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a004e8ec6235b39cdae2ca4bebcd7a42e}\label{classmdf_1_1detail_1_1Cc4Block_a004e8ec6235b39cdae2ca4bebcd7a42e}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!References@{References}}
+\index{References@{References}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{References()}{References()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classmdf_1_1detail_1_1Cc4Block_a4d9338e7b5e1d22f37f43de640453acb}{Ref\+List}}\& mdf\+::detail\+::\+Cc4\+Block\+::\+References (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a6066f04a2c7620e5a27e4fbdfb291b2c}\label{classmdf_1_1detail_1_1Cc4Block_a6066f04a2c7620e5a27e4fbdfb291b2c}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Type@{Type}}
+\index{Type@{Type}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Type()}{Type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Conversion\+Type mdf\+::detail\+::\+Cc4\+Block\+::\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a0ce934ee29e42bfd0c7214dd94874d98}\label{classmdf_1_1detail_1_1Cc4Block_a0ce934ee29e42bfd0c7214dd94874d98}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Type@{Type}}
+\index{Type@{Type}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Type()}{Type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Cc4\+Block\+::\+Type (\begin{DoxyParamCaption}\item[{Conversion\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a4a14b378d79fe473a78e73db7f2f4acb}\label{classmdf_1_1detail_1_1Cc4Block_a4a14b378d79fe473a78e73db7f2f4acb}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Unit@{Unit}}
+\index{Unit@{Unit}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Unit()}{Unit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Cc4\+Block\+::\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_ae8c7feb4d96ca39103f4cd2f6e7890fa}\label{classmdf_1_1detail_1_1Cc4Block_ae8c7feb4d96ca39103f4cd2f6e7890fa}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Unit@{Unit}}
+\index{Unit@{Unit}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Unit()}{Unit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Cc4\+Block\+::\+Unit (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Cc4Block_a523945ce7d16cf9026def856d602463b}\label{classmdf_1_1detail_1_1Cc4Block_a523945ce7d16cf9026def856d602463b}} 
+\index{mdf::detail::Cc4Block@{mdf::detail::Cc4Block}!Write@{Write}}
+\index{Write@{Write}!mdf::detail::Cc4Block@{mdf::detail::Cc4Block}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Cc4\+Block\+::\+Write (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a0513cb10839e0c50b18384c0283e5ec5}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{cc4block_8h}{cc4block.\+h}}\item 
+src/\mbox{\hyperlink{cc4block_8cpp}{cc4block.\+cpp}}\end{DoxyCompactItemize}

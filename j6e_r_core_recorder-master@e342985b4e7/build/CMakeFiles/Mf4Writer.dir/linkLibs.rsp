@@ -1,0 +1,1 @@
+ mdflib/libmdflibd.a src/utils/libutils.a "C:/Program Files (x86)/zlib/lib/zlibd.lib" "C:/Program Files/Expat/lib/libexpat.lib" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

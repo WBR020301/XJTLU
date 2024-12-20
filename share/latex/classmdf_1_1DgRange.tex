@@ -1,0 +1,95 @@
+\hypertarget{classmdf_1_1DgRange}{}\doxysection{mdf\+::Dg\+Range Class Reference}
+\label{classmdf_1_1DgRange}\index{mdf::DgRange@{mdf::DgRange}}
+
+
+Support class for handling range reads of an MDF file.  
+
+
+
+
+{\ttfamily \#include $<$dgrange.\+h$>$}
+
+
+
+Collaboration diagram for mdf\+::Dg\+Range\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classmdf_1_1DgRange__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1DgRange_ac1c24fb31f86add8221c549c3f436f61}{Dg\+Range}} ()=delete
+\item 
+\mbox{\hyperlink{classmdf_1_1DgRange_a32d7642a5f2a49b0665879ee987d78d4}{Dg\+Range}} (const IData\+Group \&data\+\_\+group, size\+\_\+t min\+\_\+sample, size\+\_\+t max\+\_\+sample)
+\item 
+bool \mbox{\hyperlink{classmdf_1_1DgRange_a2e4020dda3ed512491aa3426f67bb896}{Is\+Used}} (uint64\+\_\+t record\+\_\+id) const
+\item 
+bool \mbox{\hyperlink{classmdf_1_1DgRange_af77af518e2dabcf4915496b3234aee42}{Is\+Ready}} () const
+\item 
+\mbox{\hyperlink{classmdf_1_1CgRange}{Cg\+Range}} $\ast$ \mbox{\hyperlink{classmdf_1_1DgRange_acf5f81f9721846913d077625c381c903}{Get\+Cg\+Range}} (uint64\+\_\+t record\+\_\+id)
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1DgRange_ae1a1af783ea0a0133ce8244ad8b291ee}{Min\+Sample}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1DgRange_a7c45882ec1eb50e4376409da0e6b64e4}{Max\+Sample}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Support class for handling range reads of an MDF file. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmdf_1_1DgRange_ac1c24fb31f86add8221c549c3f436f61}\label{classmdf_1_1DgRange_ac1c24fb31f86add8221c549c3f436f61}} 
+\index{mdf::DgRange@{mdf::DgRange}!DgRange@{DgRange}}
+\index{DgRange@{DgRange}!mdf::DgRange@{mdf::DgRange}}
+\doxysubsubsection{\texorpdfstring{DgRange()}{DgRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mdf\+::\+Dg\+Range\+::\+Dg\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classmdf_1_1DgRange_a32d7642a5f2a49b0665879ee987d78d4}\label{classmdf_1_1DgRange_a32d7642a5f2a49b0665879ee987d78d4}} 
+\index{mdf::DgRange@{mdf::DgRange}!DgRange@{DgRange}}
+\index{DgRange@{DgRange}!mdf::DgRange@{mdf::DgRange}}
+\doxysubsubsection{\texorpdfstring{DgRange()}{DgRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mdf\+::\+Dg\+Range\+::\+Dg\+Range (\begin{DoxyParamCaption}\item[{const IData\+Group \&}]{data\+\_\+group,  }\item[{size\+\_\+t}]{min\+\_\+sample,  }\item[{size\+\_\+t}]{max\+\_\+sample }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmdf_1_1DgRange_acf5f81f9721846913d077625c381c903}\label{classmdf_1_1DgRange_acf5f81f9721846913d077625c381c903}} 
+\index{mdf::DgRange@{mdf::DgRange}!GetCgRange@{GetCgRange}}
+\index{GetCgRange@{GetCgRange}!mdf::DgRange@{mdf::DgRange}}
+\doxysubsubsection{\texorpdfstring{GetCgRange()}{GetCgRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmdf_1_1CgRange}{Cg\+Range}} $\ast$ mdf\+::\+Dg\+Range\+::\+Get\+Cg\+Range (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{record\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1DgRange_af77af518e2dabcf4915496b3234aee42}\label{classmdf_1_1DgRange_af77af518e2dabcf4915496b3234aee42}} 
+\index{mdf::DgRange@{mdf::DgRange}!IsReady@{IsReady}}
+\index{IsReady@{IsReady}!mdf::DgRange@{mdf::DgRange}}
+\doxysubsubsection{\texorpdfstring{IsReady()}{IsReady()}}
+{\footnotesize\ttfamily bool mdf\+::\+Dg\+Range\+::\+Is\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmdf_1_1DgRange_a2e4020dda3ed512491aa3426f67bb896}\label{classmdf_1_1DgRange_a2e4020dda3ed512491aa3426f67bb896}} 
+\index{mdf::DgRange@{mdf::DgRange}!IsUsed@{IsUsed}}
+\index{IsUsed@{IsUsed}!mdf::DgRange@{mdf::DgRange}}
+\doxysubsubsection{\texorpdfstring{IsUsed()}{IsUsed()}}
+{\footnotesize\ttfamily bool mdf\+::\+Dg\+Range\+::\+Is\+Used (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{record\+\_\+id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmdf_1_1DgRange_a7c45882ec1eb50e4376409da0e6b64e4}\label{classmdf_1_1DgRange_a7c45882ec1eb50e4376409da0e6b64e4}} 
+\index{mdf::DgRange@{mdf::DgRange}!MaxSample@{MaxSample}}
+\index{MaxSample@{MaxSample}!mdf::DgRange@{mdf::DgRange}}
+\doxysubsubsection{\texorpdfstring{MaxSample()}{MaxSample()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::\+Dg\+Range\+::\+Max\+Sample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classmdf_1_1DgRange_ae1a1af783ea0a0133ce8244ad8b291ee}\label{classmdf_1_1DgRange_ae1a1af783ea0a0133ce8244ad8b291ee}} 
+\index{mdf::DgRange@{mdf::DgRange}!MinSample@{MinSample}}
+\index{MinSample@{MinSample}!mdf::DgRange@{mdf::DgRange}}
+\doxysubsubsection{\texorpdfstring{MinSample()}{MinSample()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::\+Dg\+Range\+::\+Min\+Sample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{dgrange_8h}{dgrange.\+h}}\item 
+src/\mbox{\hyperlink{dgrange_8cpp}{dgrange.\+cpp}}\end{DoxyCompactItemize}

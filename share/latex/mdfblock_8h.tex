@@ -1,0 +1,102 @@
+\hypertarget{mdfblock_8h}{}\doxysection{include/mdfblock.h File Reference}
+\label{mdfblock_8h}\index{include/mdfblock.h@{include/mdfblock.h}}
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}bigbuffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}blockproperty.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}littlebuffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mdf/imetadata.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}platform.\+h\char`\"{}}\newline
+Include dependency graph for mdfblock.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mdfblock_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mdfblock_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{mdf\+::detail\+::\+Mdf\+Block}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacemdf}{mdf}}
+\begin{DoxyCompactList}\small\item\em mdflib \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacemdf_1_1detail}{mdf\+::detail}}
+\begin{DoxyCompactList}\small\item\em mdflib \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mdfblock_8h_ac8a4d99ad3229f4dc1e8799223ac0d7e}{BLOCK\+\_\+\+HEADER\+\_\+\+SIZE}}~24
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespacemdf_1_1detail_a77d8f89f34dbdad6659eaa35fc6d5501}{mdf\+::detail\+::\+Block\+Property\+List}} = std\+::vector$<$ Block\+Property $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespacemdf_1_1detail_aca3aa8822ecd3587c638c9935e660761}{mdf\+::detail\+::\+Update\+Option}} \+: int \{ \mbox{\hyperlink{namespacemdf_1_1detail_aca3aa8822ecd3587c638c9935e660761ac6f26364f2a33d2dfa3ce4374e845c25}{mdf\+::detail\+::\+Do\+Not\+Update\+Written\+Block}} = 0
+, \mbox{\hyperlink{namespacemdf_1_1detail_aca3aa8822ecd3587c638c9935e660761aa76e44ef223de109a46f38fa7b7b51de}{mdf\+::detail\+::\+Do\+Update\+Only\+Last\+Block}} = 1
+, \mbox{\hyperlink{namespacemdf_1_1detail_aca3aa8822ecd3587c638c9935e660761adcc14cfc41be293379215d1e57ff892a}{mdf\+::detail\+::\+Do\+Update\+All\+Blocks}} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int64\+\_\+t \mbox{\hyperlink{namespacemdf_1_1detail_a5e9ff8abc3886aff2d5b5e7af9289ae8}{mdf\+::detail\+::\+Get\+File\+Position}} (std\+::\+FILE $\ast$file)
+\item 
+int64\+\_\+t \mbox{\hyperlink{namespacemdf_1_1detail_acef3a2a68db2a842b525f794e6b121da}{mdf\+::detail\+::\+Get\+Last\+File\+Position}} (std\+::\+FILE $\ast$file)
+\item 
+void \mbox{\hyperlink{namespacemdf_1_1detail_a01cfa51baa82a004fc73c27182ae16ac}{mdf\+::detail\+::\+Set\+File\+Position}} (std\+::\+FILE $\ast$file, int64\+\_\+t position)
+\item 
+void \mbox{\hyperlink{namespacemdf_1_1detail_a5ae3b3f32e89f0cdb6b4f63550316927}{mdf\+::detail\+::\+Set\+First\+File\+Position}} (std\+::\+FILE $\ast$file)
+\item 
+size\+\_\+t \mbox{\hyperlink{namespacemdf_1_1detail_aba2b808d590ed9aab5809a8237b950a0}{mdf\+::detail\+::\+Step\+File\+Position}} (std\+::\+FILE $\ast$file, size\+\_\+t steps)
+\item 
+std\+::string \mbox{\hyperlink{namespacemdf_1_1detail_adb70d41bd0b125cfd38e9b72cd03ecf3}{mdf\+::detail\+::\+Read\+Block\+Type}} (std\+::\+FILE $\ast$file)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{namespacemdf_1_1detail_a821a6fa5cadcfc8cfe2e44aca9b7f80f}{mdf\+::detail\+::\+Read\+Byte}} (std\+::\+FILE $\ast$file, std\+::vector$<$ uint8\+\_\+t $>$ \&dest, size\+\_\+t size)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{namespacemdf_1_1detail_a4b5710726ef15759ffe1a09c15ecda23}{mdf\+::detail\+::\+Write\+Byte}} (std\+::\+FILE $\ast$file, const std\+::vector$<$ uint8\+\_\+t $>$ \&source)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{namespacemdf_1_1detail_adbf191c74c5fb7a3da540987654ef857}{mdf\+::detail\+::\+Write\+Bytes}} (std\+::\+FILE $\ast$file, size\+\_\+t nof\+\_\+bytes)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{namespacemdf_1_1detail_a9e11617511edbee20d7824c3163ff845}{mdf\+::detail\+::\+Read\+Str}} (std\+::\+FILE $\ast$file, std\+::string \&dest, size\+\_\+t size)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{namespacemdf_1_1detail_accc64d5df79aa045a84a1b95c6f9b57e}{mdf\+::detail\+::\+Write\+Str}} (std\+::\+FILE $\ast$file, const std\+::string \&source, size\+\_\+t size)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \mbox{\hyperlink{namespacemdf_1_1detail_afb694392834bec8c899e085eed76e6c7}{mdf\+::detail\+::\+To\+Hex\+String}} (const T \&value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \mbox{\hyperlink{namespacemdf_1_1detail_aa04fd3444ef5cee0528ef122c3aa7bdf}{mdf\+::detail\+::\+To\+String}} (const T \&value)
+\item 
+std\+::string \mbox{\hyperlink{namespacemdf_1_1detail_ab4d8cca912769bfea88058843d395503}{mdf\+::detail\+::\+To\+Md5\+String}} (const std\+::vector$<$ uint8\+\_\+t $>$ \&md5)
+\item 
+bool \mbox{\hyperlink{namespacemdf_1_1detail_a572f427f4a7e20b9070baf5714541563}{mdf\+::detail\+::\+Open\+Mdf\+File}} (std\+::\+FILE $\ast$\&file, const std\+::string \&filename, const std\+::string \&mode)
+\begin{DoxyCompactList}\small\item\em Support function for opening an MDF file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mdfblock_8h_ac8a4d99ad3229f4dc1e8799223ac0d7e}\label{mdfblock_8h_ac8a4d99ad3229f4dc1e8799223ac0d7e}} 
+\index{mdfblock.h@{mdfblock.h}!BLOCK\_HEADER\_SIZE@{BLOCK\_HEADER\_SIZE}}
+\index{BLOCK\_HEADER\_SIZE@{BLOCK\_HEADER\_SIZE}!mdfblock.h@{mdfblock.h}}
+\doxysubsubsection{\texorpdfstring{BLOCK\_HEADER\_SIZE}{BLOCK\_HEADER\_SIZE}}
+{\footnotesize\ttfamily \#define BLOCK\+\_\+\+HEADER\+\_\+\+SIZE~24}
+

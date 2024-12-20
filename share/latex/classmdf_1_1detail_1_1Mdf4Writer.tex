@@ -1,0 +1,202 @@
+\hypertarget{classmdf_1_1detail_1_1Mdf4Writer}{}\doxysection{mdf\+::detail\+::Mdf4\+Writer Class Reference}
+\label{classmdf_1_1detail_1_1Mdf4Writer}\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+
+
+{\ttfamily \#include $<$mdf4writer.\+h$>$}
+
+
+
+Inheritance diagram for mdf\+::detail\+::Mdf4\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmdf_1_1detail_1_1Mdf4Writer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for mdf\+::detail\+::Mdf4\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classmdf_1_1detail_1_1Mdf4Writer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a5ed926d833478f88d4d6a2a7a41bb7d7}{Mdf4\+Writer}} ()=default
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_afc55151739ee7f96c2826d908ba2921e}{$\sim$\+Mdf4\+Writer}} () override
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_ac637a4c39421ad2f013e368bc37d5681}{Init\+Measurement}} () override
+\item 
+IChannel\+Conversion $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a3c433079a6c0d19ce9a8eb2e522eed0f}{Create\+Channel\+Conversion}} (IChannel $\ast$parent) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a6ef6b92958490611a4769416db639418}{Create\+Mdf\+File}} () override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a9964acba7e3592ca90d6601e40dc63ac}{Set\+Last\+Position}} (std\+::\+FILE $\ast$file) override
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a0c96d75045686f43096a7ae66fe448cd}{Prepare\+For\+Writing}} () override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a153cd6016fa701d42da10d95c57cb701}{Save\+Queue}} (std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&lock) override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_aa80710e0497036f02b09fc4cb95920d4}{Clean\+Queue}} (std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&lock) override
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a672f98f57e9119ab42af7c283fff4266}{Calculate\+Nof\+Dz\+Blocks}} ()
+\begin{DoxyCompactList}\small\item\em Calculates number of DZ blocks in the sample queue. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a96049f6f6046126828a455e132ec2f6d}{Save\+Queue\+Compressed}} (std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&lock)
+\item 
+virtual void \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a86a81e38c2e4269812f508cab2c7092f}{Clean\+Queue\+Compressed}} (std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&lock, bool finalize)
+\begin{DoxyCompactList}\small\item\em Save one DZ block from the sample queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_ab2341cdd34fdaa429f1e8d06c2c5b5d3}{Set\+Data\+Group\+Dt\+End\+Position}} (IData\+Group $\ast$cur\+\_\+dg, std\+::\+FILE $\ast$file)
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a8ac7353e5ec76424125d9ae2d6a0bc97}{Set\+Data\+Position}} (std\+::\+FILE $\ast$file) override
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a2e52c616ed796bd1eef619b736b92cec}{Write\+Signal\+Data}} (std\+::\+FILE $\ast$file) override
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1Dg4Block}{Dg4\+Block}} $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_aae0a43de7f373d87199f2cc355a8ea08}{Get\+Last\+Dg4}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_aa76527c26c612dccfaeea20165bfbf86}{offset\+\_\+}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_a5ed926d833478f88d4d6a2a7a41bb7d7}\label{classmdf_1_1detail_1_1Mdf4Writer_a5ed926d833478f88d4d6a2a7a41bb7d7}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!Mdf4Writer@{Mdf4Writer}}
+\index{Mdf4Writer@{Mdf4Writer}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{Mdf4Writer()}{Mdf4Writer()}}
+{\footnotesize\ttfamily mdf\+::detail\+::\+Mdf4\+Writer\+::\+Mdf4\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_afc55151739ee7f96c2826d908ba2921e}\label{classmdf_1_1detail_1_1Mdf4Writer_afc55151739ee7f96c2826d908ba2921e}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!````~Mdf4Writer@{$\sim$Mdf4Writer}}
+\index{````~Mdf4Writer@{$\sim$Mdf4Writer}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mdf4Writer()}{~Mdf4Writer()}}
+{\footnotesize\ttfamily mdf\+::detail\+::\+Mdf4\+Writer\+::$\sim$\+Mdf4\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_a672f98f57e9119ab42af7c283fff4266}\label{classmdf_1_1detail_1_1Mdf4Writer_a672f98f57e9119ab42af7c283fff4266}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!CalculateNofDzBlocks@{CalculateNofDzBlocks}}
+\index{CalculateNofDzBlocks@{CalculateNofDzBlocks}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{CalculateNofDzBlocks()}{CalculateNofDzBlocks()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Mdf4\+Writer\+::\+Calculate\+Nof\+Dz\+Blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Calculates number of DZ blocks in the sample queue. 
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_aa80710e0497036f02b09fc4cb95920d4}\label{classmdf_1_1detail_1_1Mdf4Writer_aa80710e0497036f02b09fc4cb95920d4}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!CleanQueue@{CleanQueue}}
+\index{CleanQueue@{CleanQueue}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{CleanQueue()}{CleanQueue()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf4\+Writer\+::\+Clean\+Queue (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&}]{lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_a86a81e38c2e4269812f508cab2c7092f}\label{classmdf_1_1detail_1_1Mdf4Writer_a86a81e38c2e4269812f508cab2c7092f}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!CleanQueueCompressed@{CleanQueueCompressed}}
+\index{CleanQueueCompressed@{CleanQueueCompressed}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{CleanQueueCompressed()}{CleanQueueCompressed()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf4\+Writer\+::\+Clean\+Queue\+Compressed (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&}]{lock,  }\item[{bool}]{finalize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Save one DZ block from the sample queue. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_a969b15f7d6e0c33356a53c72e4f5fb83}{mdf\+::detail\+::\+Mdf\+Converter}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_a3c433079a6c0d19ce9a8eb2e522eed0f}\label{classmdf_1_1detail_1_1Mdf4Writer_a3c433079a6c0d19ce9a8eb2e522eed0f}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!CreateChannelConversion@{CreateChannelConversion}}
+\index{CreateChannelConversion@{CreateChannelConversion}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{CreateChannelConversion()}{CreateChannelConversion()}}
+{\footnotesize\ttfamily IChannel\+Conversion $\ast$ mdf\+::detail\+::\+Mdf4\+Writer\+::\+Create\+Channel\+Conversion (\begin{DoxyParamCaption}\item[{IChannel $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_a6ef6b92958490611a4769416db639418}\label{classmdf_1_1detail_1_1Mdf4Writer_a6ef6b92958490611a4769416db639418}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!CreateMdfFile@{CreateMdfFile}}
+\index{CreateMdfFile@{CreateMdfFile}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{CreateMdfFile()}{CreateMdfFile()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf4\+Writer\+::\+Create\+Mdf\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_aae0a43de7f373d87199f2cc355a8ea08}\label{classmdf_1_1detail_1_1Mdf4Writer_aae0a43de7f373d87199f2cc355a8ea08}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!GetLastDg4@{GetLastDg4}}
+\index{GetLastDg4@{GetLastDg4}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{GetLastDg4()}{GetLastDg4()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmdf_1_1detail_1_1Dg4Block}{Dg4\+Block}} $\ast$ mdf\+::detail\+::\+Mdf4\+Writer\+::\+Get\+Last\+Dg4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_ac637a4c39421ad2f013e368bc37d5681}\label{classmdf_1_1detail_1_1Mdf4Writer_ac637a4c39421ad2f013e368bc37d5681}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!InitMeasurement@{InitMeasurement}}
+\index{InitMeasurement@{InitMeasurement}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{InitMeasurement()}{InitMeasurement()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Mdf4\+Writer\+::\+Init\+Measurement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_a0c96d75045686f43096a7ae66fe448cd}\label{classmdf_1_1detail_1_1Mdf4Writer_a0c96d75045686f43096a7ae66fe448cd}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!PrepareForWriting@{PrepareForWriting}}
+\index{PrepareForWriting@{PrepareForWriting}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{PrepareForWriting()}{PrepareForWriting()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Mdf4\+Writer\+::\+Prepare\+For\+Writing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_a153cd6016fa701d42da10d95c57cb701}\label{classmdf_1_1detail_1_1Mdf4Writer_a153cd6016fa701d42da10d95c57cb701}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!SaveQueue@{SaveQueue}}
+\index{SaveQueue@{SaveQueue}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{SaveQueue()}{SaveQueue()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf4\+Writer\+::\+Save\+Queue (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&}]{lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_a96049f6f6046126828a455e132ec2f6d}\label{classmdf_1_1detail_1_1Mdf4Writer_a96049f6f6046126828a455e132ec2f6d}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!SaveQueueCompressed@{SaveQueueCompressed}}
+\index{SaveQueueCompressed@{SaveQueueCompressed}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{SaveQueueCompressed()}{SaveQueueCompressed()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf4\+Writer\+::\+Save\+Queue\+Compressed (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&}]{lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_a19f58f5427a96c7aa8f07652e1c6f3ab}{mdf\+::detail\+::\+Mdf\+Converter}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_ab2341cdd34fdaa429f1e8d06c2c5b5d3}\label{classmdf_1_1detail_1_1Mdf4Writer_ab2341cdd34fdaa429f1e8d06c2c5b5d3}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!SetDataGroupDtEndPosition@{SetDataGroupDtEndPosition}}
+\index{SetDataGroupDtEndPosition@{SetDataGroupDtEndPosition}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{SetDataGroupDtEndPosition()}{SetDataGroupDtEndPosition()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf4\+Writer\+::\+Set\+Data\+Group\+Dt\+End\+Position (\begin{DoxyParamCaption}\item[{IData\+Group $\ast$}]{cur\+\_\+dg,  }\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_a8ac7353e5ec76424125d9ae2d6a0bc97}\label{classmdf_1_1detail_1_1Mdf4Writer_a8ac7353e5ec76424125d9ae2d6a0bc97}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!SetDataPosition@{SetDataPosition}}
+\index{SetDataPosition@{SetDataPosition}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{SetDataPosition()}{SetDataPosition()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf4\+Writer\+::\+Set\+Data\+Position (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_a9964acba7e3592ca90d6601e40dc63ac}\label{classmdf_1_1detail_1_1Mdf4Writer_a9964acba7e3592ca90d6601e40dc63ac}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!SetLastPosition@{SetLastPosition}}
+\index{SetLastPosition@{SetLastPosition}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{SetLastPosition()}{SetLastPosition()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf4\+Writer\+::\+Set\+Last\+Position (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_a2e52c616ed796bd1eef619b736b92cec}\label{classmdf_1_1detail_1_1Mdf4Writer_a2e52c616ed796bd1eef619b736b92cec}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!WriteSignalData@{WriteSignalData}}
+\index{WriteSignalData@{WriteSignalData}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{WriteSignalData()}{WriteSignalData()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Mdf4\+Writer\+::\+Write\+Signal\+Data (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Mdf4Writer_aa76527c26c612dccfaeea20165bfbf86}\label{classmdf_1_1detail_1_1Mdf4Writer_aa76527c26c612dccfaeea20165bfbf86}} 
+\index{mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}!offset\_@{offset\_}}
+\index{offset\_@{offset\_}!mdf::detail::Mdf4Writer@{mdf::detail::Mdf4Writer}}
+\doxysubsubsection{\texorpdfstring{offset\_}{offset\_}}
+{\footnotesize\ttfamily uint64\+\_\+t mdf\+::detail\+::\+Mdf4\+Writer\+::offset\+\_\+ = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{mdf4writer_8h}{mdf4writer.\+h}}\item 
+src/\mbox{\hyperlink{mdf4writer_8cpp}{mdf4writer.\+cpp}}\end{DoxyCompactItemize}

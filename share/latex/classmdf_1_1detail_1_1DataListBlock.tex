@@ -1,0 +1,171 @@
+\hypertarget{classmdf_1_1detail_1_1DataListBlock}{}\doxysection{mdf\+::detail\+::Data\+List\+Block Class Reference}
+\label{classmdf_1_1detail_1_1DataListBlock}\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+
+
+{\ttfamily \#include $<$datalistblock.\+h$>$}
+
+
+
+Inheritance diagram for mdf\+::detail\+::Data\+List\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmdf_1_1detail_1_1DataListBlock__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for mdf\+::detail\+::Data\+List\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmdf_1_1detail_1_1DataListBlock__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a2c591c13a84c5f7a797a9ed81f26f3b2}{Block\+List}} = std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a2c591c13a84c5f7a797a9ed81f26f3b2}{Block\+List}} \& \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_aac5970b5be0bffed8725989e5bf3d030}{Data\+Block\+List}} ()
+\item 
+const \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a2c591c13a84c5f7a797a9ed81f26f3b2}{Block\+List}} \& \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a8a299be35c3e7de83cf53e1d77eef3fe}{Data\+Block\+List}} () const
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a3806542604fa2dd4b127f961e0a18f3a}{Data\+Size}} () const
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a21b9df0fd2f8efd44c362a68ac9956d8}{Find}} (int64\+\_\+t index) const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a5b857a835206a77ab7b0059277becb89}{Read\+Block\+List}} (std\+::\+FILE $\ast$file, size\+\_\+t data\+\_\+index)
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a3500d33fdb84d016b963a6ce6cfa526e}{Write\+Block\+List}} (std\+::\+FILE $\ast$file, size\+\_\+t data\+\_\+index)
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a9bbe955fe37a2d9181f53551773aaf50}{Read\+Link\+List}} (std\+::\+FILE $\ast$file, size\+\_\+t data\+\_\+index, uint32\+\_\+t nof\+\_\+link)
+\item 
+virtual void \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a70f5378f8099481e5b9ea3eb02bf13a7}{Clear\+Data}} ()
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_ac4e99789d48c30d75409a89f042eb6d2}{Copy\+Data\+To\+Buffer}} (FILE $\ast$from\+\_\+file, std\+::vector$<$ uint8\+\_\+t $>$ \&buffer, size\+\_\+t \&buffer\+\_\+index) const
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a7617303228bc058c0cbb3597f2470154}{Is\+Rd\+Block}} () const
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_afe2902e1efb64120fd5b4769bcf8462a}{Get\+Data\+Block\+List}} (std\+::vector$<$ \mbox{\hyperlink{classmdf_1_1detail_1_1DataBlock}{Data\+Block}} $\ast$ $>$ \&block\+\_\+list) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a2c591c13a84c5f7a797a9ed81f26f3b2}{Block\+List}} \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a0010d3434ec4a55edf6f30c612394f59}{block\+\_\+list\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_a2c591c13a84c5f7a797a9ed81f26f3b2}\label{classmdf_1_1detail_1_1DataListBlock_a2c591c13a84c5f7a797a9ed81f26f3b2}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!BlockList@{BlockList}}
+\index{BlockList@{BlockList}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{BlockList}{BlockList}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a2c591c13a84c5f7a797a9ed81f26f3b2}{mdf\+::detail\+::\+Data\+List\+Block\+::\+Block\+List}} =  std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}}$>$ $>$}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_a70f5378f8099481e5b9ea3eb02bf13a7}\label{classmdf_1_1detail_1_1DataListBlock_a70f5378f8099481e5b9ea3eb02bf13a7}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!ClearData@{ClearData}}
+\index{ClearData@{ClearData}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{ClearData()}{ClearData()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Data\+List\+Block\+::\+Clear\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classmdf_1_1detail_1_1Sr4Block_a24170994232f1ae93c3ca727f9e5a339}{mdf\+::detail\+::\+Sr4\+Block}}, \mbox{\hyperlink{classmdf_1_1detail_1_1Dg4Block_a47a9ca893c8542ad59186c1aa6465e4f}{mdf\+::detail\+::\+Dg4\+Block}}, and \mbox{\hyperlink{classmdf_1_1detail_1_1Cn4Block_af73a13da79694f8fbdcb1414b6bb3b76}{mdf\+::detail\+::\+Cn4\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_ac4e99789d48c30d75409a89f042eb6d2}\label{classmdf_1_1detail_1_1DataListBlock_ac4e99789d48c30d75409a89f042eb6d2}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!CopyDataToBuffer@{CopyDataToBuffer}}
+\index{CopyDataToBuffer@{CopyDataToBuffer}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{CopyDataToBuffer()}{CopyDataToBuffer()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Data\+List\+Block\+::\+Copy\+Data\+To\+Buffer (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{from\+\_\+file,  }\item[{std\+::vector$<$ uint8\+\_\+t $>$ \&}]{buffer,  }\item[{size\+\_\+t \&}]{buffer\+\_\+index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_aac5970b5be0bffed8725989e5bf3d030}\label{classmdf_1_1detail_1_1DataListBlock_aac5970b5be0bffed8725989e5bf3d030}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!DataBlockList@{DataBlockList}}
+\index{DataBlockList@{DataBlockList}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{DataBlockList()}{DataBlockList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a2c591c13a84c5f7a797a9ed81f26f3b2}{Block\+List}}\& mdf\+::detail\+::\+Data\+List\+Block\+::\+Data\+Block\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_a8a299be35c3e7de83cf53e1d77eef3fe}\label{classmdf_1_1detail_1_1DataListBlock_a8a299be35c3e7de83cf53e1d77eef3fe}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!DataBlockList@{DataBlockList}}
+\index{DataBlockList@{DataBlockList}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{DataBlockList()}{DataBlockList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a2c591c13a84c5f7a797a9ed81f26f3b2}{Block\+List}}\& mdf\+::detail\+::\+Data\+List\+Block\+::\+Data\+Block\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_a3806542604fa2dd4b127f961e0a18f3a}\label{classmdf_1_1detail_1_1DataListBlock_a3806542604fa2dd4b127f961e0a18f3a}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!DataSize@{DataSize}}
+\index{DataSize@{DataSize}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{DataSize()}{DataSize()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Data\+List\+Block\+::\+Data\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classmdf_1_1detail_1_1Dg4Block_ade2c45d03a69d16259f92c19d0c180bd}{mdf\+::detail\+::\+Dg4\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_a21b9df0fd2f8efd44c362a68ac9956d8}\label{classmdf_1_1detail_1_1DataListBlock_a21b9df0fd2f8efd44c362a68ac9956d8}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!Find@{Find}}
+\index{Find@{Find}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $\ast$ mdf\+::detail\+::\+Data\+List\+Block\+::\+Find (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a435d646c7fe6f4f39153daacdae01824}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmdf_1_1detail_1_1Dg4Block_ab5c8d6117f47619bd882988c7fe5edb4}{mdf\+::detail\+::\+Dg4\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_afe2902e1efb64120fd5b4769bcf8462a}\label{classmdf_1_1detail_1_1DataListBlock_afe2902e1efb64120fd5b4769bcf8462a}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!GetDataBlockList@{GetDataBlockList}}
+\index{GetDataBlockList@{GetDataBlockList}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{GetDataBlockList()}{GetDataBlockList()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Data\+List\+Block\+::\+Get\+Data\+Block\+List (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classmdf_1_1detail_1_1DataBlock}{Data\+Block}} $\ast$ $>$ \&}]{block\+\_\+list }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_a7617303228bc058c0cbb3597f2470154}\label{classmdf_1_1detail_1_1DataListBlock_a7617303228bc058c0cbb3597f2470154}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!IsRdBlock@{IsRdBlock}}
+\index{IsRdBlock@{IsRdBlock}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{IsRdBlock()}{IsRdBlock()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Data\+List\+Block\+::\+Is\+Rd\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_a5b857a835206a77ab7b0059277becb89}\label{classmdf_1_1detail_1_1DataListBlock_a5b857a835206a77ab7b0059277becb89}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!ReadBlockList@{ReadBlockList}}
+\index{ReadBlockList@{ReadBlockList}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{ReadBlockList()}{ReadBlockList()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Data\+List\+Block\+::\+Read\+Block\+List (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file,  }\item[{size\+\_\+t}]{data\+\_\+index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_a9bbe955fe37a2d9181f53551773aaf50}\label{classmdf_1_1detail_1_1DataListBlock_a9bbe955fe37a2d9181f53551773aaf50}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!ReadLinkList@{ReadLinkList}}
+\index{ReadLinkList@{ReadLinkList}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{ReadLinkList()}{ReadLinkList()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Data\+List\+Block\+::\+Read\+Link\+List (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file,  }\item[{size\+\_\+t}]{data\+\_\+index,  }\item[{uint32\+\_\+t}]{nof\+\_\+link }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_a3500d33fdb84d016b963a6ce6cfa526e}\label{classmdf_1_1detail_1_1DataListBlock_a3500d33fdb84d016b963a6ce6cfa526e}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!WriteBlockList@{WriteBlockList}}
+\index{WriteBlockList@{WriteBlockList}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{WriteBlockList()}{WriteBlockList()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Data\+List\+Block\+::\+Write\+Block\+List (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file,  }\item[{size\+\_\+t}]{data\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1DataListBlock_a0010d3434ec4a55edf6f30c612394f59}\label{classmdf_1_1detail_1_1DataListBlock_a0010d3434ec4a55edf6f30c612394f59}} 
+\index{mdf::detail::DataListBlock@{mdf::detail::DataListBlock}!block\_list\_@{block\_list\_}}
+\index{block\_list\_@{block\_list\_}!mdf::detail::DataListBlock@{mdf::detail::DataListBlock}}
+\doxysubsubsection{\texorpdfstring{block\_list\_}{block\_list\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmdf_1_1detail_1_1DataListBlock_a2c591c13a84c5f7a797a9ed81f26f3b2}{Block\+List}} mdf\+::detail\+::\+Data\+List\+Block\+::block\+\_\+list\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{datalistblock_8h}{datalistblock.\+h}}\item 
+src/\mbox{\hyperlink{datalistblock_8cpp}{datalistblock.\+cpp}}\end{DoxyCompactItemize}

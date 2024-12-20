@@ -1,0 +1,172 @@
+\hypertarget{classmdf_1_1ExpatXml}{}\doxysection{mdf\+::Expat\+Xml Class Reference}
+\label{classmdf_1_1ExpatXml}\index{mdf::ExpatXml@{mdf::ExpatXml}}
+
+
+Simple wrapper around the EXPAT parser.  
+
+
+
+
+{\ttfamily \#include \char`\"{}expatxml.\+h\char`\"{}}
+
+
+
+Inheritance diagram for mdf\+::Expat\+Xml\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classmdf_1_1ExpatXml__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for mdf\+::Expat\+Xml\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classmdf_1_1ExpatXml__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1ExpatXml_a8ce84e767c4b3caff51f7cbaa1aaf0f8}{Expat\+Xml}} ()=default
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmdf_1_1ExpatXml_ad230501d5032169b16b4d26d5baf3199}{$\sim$\+Expat\+Xml}} () override=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmdf_1_1ExpatXml_acd6bb8e45f1c648d84a7b6abc53d5f2d}{Parse\+File}} () override
+\begin{DoxyCompactList}\small\item\em Parses the input file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmdf_1_1ExpatXml_ab0cf0b94bac2bd86b8a3f7d5c2b99099}{Parse\+String}} (const std\+::string \&input) override
+\begin{DoxyCompactList}\small\item\em Parses an input string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1ExpatXml_a602dce73ab7d126d9b36db5fdb5ba5ee}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset the parser for a new round. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1ExpatXml_a06ea1f2fc71f46f053a0a621f4b4847c}{Start\+Element}} (const XML\+\_\+\+Char $\ast$name, const XML\+\_\+\+Char $\ast$$\ast$attributes)
+\begin{DoxyCompactList}\small\item\em Parser callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1ExpatXml_a7118b251dfc8e6cff44dd752d7eaa2f2}{End\+Element}} (const XML\+\_\+\+Char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Parser callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1ExpatXml_a9ab08263f106d0458f279db6cc98bc68}{Character\+Data}} (const char $\ast$buffer, int len)
+\begin{DoxyCompactList}\small\item\em Parser callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1ExpatXml_a1d309771e147dd2dcd3727574aa721d1}{Xml\+Decl}} (const XML\+\_\+\+Char $\ast$version, const XML\+\_\+\+Char $\ast$encoding, int standalone)
+\begin{DoxyCompactList}\small\item\em Parser callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Simple wrapper around the EXPAT parser. 
+
+Implements an XML parser by using the EXPAT parser. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmdf_1_1ExpatXml_a8ce84e767c4b3caff51f7cbaa1aaf0f8}\label{classmdf_1_1ExpatXml_a8ce84e767c4b3caff51f7cbaa1aaf0f8}} 
+\index{mdf::ExpatXml@{mdf::ExpatXml}!ExpatXml@{ExpatXml}}
+\index{ExpatXml@{ExpatXml}!mdf::ExpatXml@{mdf::ExpatXml}}
+\doxysubsubsection{\texorpdfstring{ExpatXml()}{ExpatXml()}}
+{\footnotesize\ttfamily mdf\+::\+Expat\+Xml\+::\+Expat\+Xml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Constructor. 
+
+\mbox{\Hypertarget{classmdf_1_1ExpatXml_ad230501d5032169b16b4d26d5baf3199}\label{classmdf_1_1ExpatXml_ad230501d5032169b16b4d26d5baf3199}} 
+\index{mdf::ExpatXml@{mdf::ExpatXml}!````~ExpatXml@{$\sim$ExpatXml}}
+\index{````~ExpatXml@{$\sim$ExpatXml}!mdf::ExpatXml@{mdf::ExpatXml}}
+\doxysubsubsection{\texorpdfstring{$\sim$ExpatXml()}{~ExpatXml()}}
+{\footnotesize\ttfamily mdf\+::\+Expat\+Xml\+::$\sim$\+Expat\+Xml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmdf_1_1ExpatXml_a9ab08263f106d0458f279db6cc98bc68}\label{classmdf_1_1ExpatXml_a9ab08263f106d0458f279db6cc98bc68}} 
+\index{mdf::ExpatXml@{mdf::ExpatXml}!CharacterData@{CharacterData}}
+\index{CharacterData@{CharacterData}!mdf::ExpatXml@{mdf::ExpatXml}}
+\doxysubsubsection{\texorpdfstring{CharacterData()}{CharacterData()}}
+{\footnotesize\ttfamily void mdf\+::\+Expat\+Xml\+::\+Character\+Data (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buffer,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+
+
+Parser callback. 
+
+\mbox{\Hypertarget{classmdf_1_1ExpatXml_a7118b251dfc8e6cff44dd752d7eaa2f2}\label{classmdf_1_1ExpatXml_a7118b251dfc8e6cff44dd752d7eaa2f2}} 
+\index{mdf::ExpatXml@{mdf::ExpatXml}!EndElement@{EndElement}}
+\index{EndElement@{EndElement}!mdf::ExpatXml@{mdf::ExpatXml}}
+\doxysubsubsection{\texorpdfstring{EndElement()}{EndElement()}}
+{\footnotesize\ttfamily void mdf\+::\+Expat\+Xml\+::\+End\+Element (\begin{DoxyParamCaption}\item[{const XML\+\_\+\+Char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Parser callback. 
+
+\mbox{\Hypertarget{classmdf_1_1ExpatXml_acd6bb8e45f1c648d84a7b6abc53d5f2d}\label{classmdf_1_1ExpatXml_acd6bb8e45f1c648d84a7b6abc53d5f2d}} 
+\index{mdf::ExpatXml@{mdf::ExpatXml}!ParseFile@{ParseFile}}
+\index{ParseFile@{ParseFile}!mdf::ExpatXml@{mdf::ExpatXml}}
+\doxysubsubsection{\texorpdfstring{ParseFile()}{ParseFile()}}
+{\footnotesize\ttfamily bool mdf\+::\+Expat\+Xml\+::\+Parse\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Parses the input file. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1IXmlFile_a47d9907daff172c32aac0ddb63e74110}{mdf\+::\+IXml\+File}}.
+
+\mbox{\Hypertarget{classmdf_1_1ExpatXml_ab0cf0b94bac2bd86b8a3f7d5c2b99099}\label{classmdf_1_1ExpatXml_ab0cf0b94bac2bd86b8a3f7d5c2b99099}} 
+\index{mdf::ExpatXml@{mdf::ExpatXml}!ParseString@{ParseString}}
+\index{ParseString@{ParseString}!mdf::ExpatXml@{mdf::ExpatXml}}
+\doxysubsubsection{\texorpdfstring{ParseString()}{ParseString()}}
+{\footnotesize\ttfamily bool mdf\+::\+Expat\+Xml\+::\+Parse\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Parses an input string. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1IXmlFile_ababd57ea97e23ff4f5581812d40d8c8a}{mdf\+::\+IXml\+File}}.
+
+\mbox{\Hypertarget{classmdf_1_1ExpatXml_a602dce73ab7d126d9b36db5fdb5ba5ee}\label{classmdf_1_1ExpatXml_a602dce73ab7d126d9b36db5fdb5ba5ee}} 
+\index{mdf::ExpatXml@{mdf::ExpatXml}!Reset@{Reset}}
+\index{Reset@{Reset}!mdf::ExpatXml@{mdf::ExpatXml}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void mdf\+::\+Expat\+Xml\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reset the parser for a new round. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1IXmlFile_a438aadbff33cc8ad981a12b7e269b4f7}{mdf\+::\+IXml\+File}}.
+
+\mbox{\Hypertarget{classmdf_1_1ExpatXml_a06ea1f2fc71f46f053a0a621f4b4847c}\label{classmdf_1_1ExpatXml_a06ea1f2fc71f46f053a0a621f4b4847c}} 
+\index{mdf::ExpatXml@{mdf::ExpatXml}!StartElement@{StartElement}}
+\index{StartElement@{StartElement}!mdf::ExpatXml@{mdf::ExpatXml}}
+\doxysubsubsection{\texorpdfstring{StartElement()}{StartElement()}}
+{\footnotesize\ttfamily void mdf\+::\+Expat\+Xml\+::\+Start\+Element (\begin{DoxyParamCaption}\item[{const XML\+\_\+\+Char $\ast$}]{name,  }\item[{const XML\+\_\+\+Char $\ast$$\ast$}]{attributes }\end{DoxyParamCaption})}
+
+
+
+Parser callback. 
+
+\mbox{\Hypertarget{classmdf_1_1ExpatXml_a1d309771e147dd2dcd3727574aa721d1}\label{classmdf_1_1ExpatXml_a1d309771e147dd2dcd3727574aa721d1}} 
+\index{mdf::ExpatXml@{mdf::ExpatXml}!XmlDecl@{XmlDecl}}
+\index{XmlDecl@{XmlDecl}!mdf::ExpatXml@{mdf::ExpatXml}}
+\doxysubsubsection{\texorpdfstring{XmlDecl()}{XmlDecl()}}
+{\footnotesize\ttfamily void mdf\+::\+Expat\+Xml\+::\+Xml\+Decl (\begin{DoxyParamCaption}\item[{const XML\+\_\+\+Char $\ast$}]{version,  }\item[{const XML\+\_\+\+Char $\ast$}]{encoding,  }\item[{int}]{standalone }\end{DoxyParamCaption})}
+
+
+
+Parser callback. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{expatxml_8h}{expatxml.\+h}}\item 
+src/\mbox{\hyperlink{expatxml_8cpp}{expatxml.\+cpp}}\end{DoxyCompactItemize}

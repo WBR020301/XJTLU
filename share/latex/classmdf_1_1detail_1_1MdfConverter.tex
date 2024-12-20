@@ -1,0 +1,141 @@
+\hypertarget{classmdf_1_1detail_1_1MdfConverter}{}\doxysection{mdf\+::detail\+::Mdf\+Converter Class Reference}
+\label{classmdf_1_1detail_1_1MdfConverter}\index{mdf::detail::MdfConverter@{mdf::detail::MdfConverter}}
+
+
+{\ttfamily \#include $<$mdfconverter.\+h$>$}
+
+
+
+Inheritance diagram for mdf\+::detail\+::Mdf\+Converter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmdf_1_1detail_1_1MdfConverter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for mdf\+::detail\+::Mdf\+Converter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmdf_1_1detail_1_1MdfConverter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_a78519f6fbd7b39a3690c66287abf7d9d}{Mdf\+Converter}} ()=default
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_a9661dd1d3bc460fc3add3441f460149c}{$\sim$\+Mdf\+Converter}} () override
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_a8369adef850e6f2707a7483af280c9d5}{Init\+Measurement}} () override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_a43176b68658ad7122e3b7b39d5e66ac5}{Save\+Sample}} (const IChannel\+Group \&group, uint64\+\_\+t time) override
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_a22d46b7a78a991e148ca8cb5d3f7e8ae}{Finalize\+Measurement}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_a8cb69f185942a885857e5d163ff6561c}{Trim\+Queue}} () override
+\begin{DoxyCompactList}\small\item\em Trims the sample queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_a8581bd9212222e544f1152290c9317fc}{Save\+Queue}} (std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&lock) override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_aae13f898f0a7e6a61b8506af71ce2ada}{Clean\+Queue}} (std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&lock) override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_a19f58f5427a96c7aa8f07652e1c6f3ab}{Save\+Queue\+Compressed}} (std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&lock) override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1MdfConverter_a969b15f7d6e0c33356a53c72e4f5fb83}{Clean\+Queue\+Compressed}} (std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&lock, bool finalize) override
+\begin{DoxyCompactList}\small\item\em Save one DZ block from the sample queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1MdfConverter_a78519f6fbd7b39a3690c66287abf7d9d}\label{classmdf_1_1detail_1_1MdfConverter_a78519f6fbd7b39a3690c66287abf7d9d}} 
+\index{mdf::detail::MdfConverter@{mdf::detail::MdfConverter}!MdfConverter@{MdfConverter}}
+\index{MdfConverter@{MdfConverter}!mdf::detail::MdfConverter@{mdf::detail::MdfConverter}}
+\doxysubsubsection{\texorpdfstring{MdfConverter()}{MdfConverter()}}
+{\footnotesize\ttfamily mdf\+::detail\+::\+Mdf\+Converter\+::\+Mdf\+Converter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1MdfConverter_a9661dd1d3bc460fc3add3441f460149c}\label{classmdf_1_1detail_1_1MdfConverter_a9661dd1d3bc460fc3add3441f460149c}} 
+\index{mdf::detail::MdfConverter@{mdf::detail::MdfConverter}!````~MdfConverter@{$\sim$MdfConverter}}
+\index{````~MdfConverter@{$\sim$MdfConverter}!mdf::detail::MdfConverter@{mdf::detail::MdfConverter}}
+\doxysubsubsection{\texorpdfstring{$\sim$MdfConverter()}{~MdfConverter()}}
+{\footnotesize\ttfamily mdf\+::detail\+::\+Mdf\+Converter\+::$\sim$\+Mdf\+Converter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1MdfConverter_aae13f898f0a7e6a61b8506af71ce2ada}\label{classmdf_1_1detail_1_1MdfConverter_aae13f898f0a7e6a61b8506af71ce2ada}} 
+\index{mdf::detail::MdfConverter@{mdf::detail::MdfConverter}!CleanQueue@{CleanQueue}}
+\index{CleanQueue@{CleanQueue}!mdf::detail::MdfConverter@{mdf::detail::MdfConverter}}
+\doxysubsubsection{\texorpdfstring{CleanQueue()}{CleanQueue()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf\+Converter\+::\+Clean\+Queue (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&}]{lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1MdfConverter_a969b15f7d6e0c33356a53c72e4f5fb83}\label{classmdf_1_1detail_1_1MdfConverter_a969b15f7d6e0c33356a53c72e4f5fb83}} 
+\index{mdf::detail::MdfConverter@{mdf::detail::MdfConverter}!CleanQueueCompressed@{CleanQueueCompressed}}
+\index{CleanQueueCompressed@{CleanQueueCompressed}!mdf::detail::MdfConverter@{mdf::detail::MdfConverter}}
+\doxysubsubsection{\texorpdfstring{CleanQueueCompressed()}{CleanQueueCompressed()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf\+Converter\+::\+Clean\+Queue\+Compressed (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&}]{lock,  }\item[{bool}]{finalize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Save one DZ block from the sample queue. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a86a81e38c2e4269812f508cab2c7092f}{mdf\+::detail\+::\+Mdf4\+Writer}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1MdfConverter_a22d46b7a78a991e148ca8cb5d3f7e8ae}\label{classmdf_1_1detail_1_1MdfConverter_a22d46b7a78a991e148ca8cb5d3f7e8ae}} 
+\index{mdf::detail::MdfConverter@{mdf::detail::MdfConverter}!FinalizeMeasurement@{FinalizeMeasurement}}
+\index{FinalizeMeasurement@{FinalizeMeasurement}!mdf::detail::MdfConverter@{mdf::detail::MdfConverter}}
+\doxysubsubsection{\texorpdfstring{FinalizeMeasurement()}{FinalizeMeasurement()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Mdf\+Converter\+::\+Finalize\+Measurement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1MdfConverter_a8369adef850e6f2707a7483af280c9d5}\label{classmdf_1_1detail_1_1MdfConverter_a8369adef850e6f2707a7483af280c9d5}} 
+\index{mdf::detail::MdfConverter@{mdf::detail::MdfConverter}!InitMeasurement@{InitMeasurement}}
+\index{InitMeasurement@{InitMeasurement}!mdf::detail::MdfConverter@{mdf::detail::MdfConverter}}
+\doxysubsubsection{\texorpdfstring{InitMeasurement()}{InitMeasurement()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Mdf\+Converter\+::\+Init\+Measurement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1MdfConverter_a8581bd9212222e544f1152290c9317fc}\label{classmdf_1_1detail_1_1MdfConverter_a8581bd9212222e544f1152290c9317fc}} 
+\index{mdf::detail::MdfConverter@{mdf::detail::MdfConverter}!SaveQueue@{SaveQueue}}
+\index{SaveQueue@{SaveQueue}!mdf::detail::MdfConverter@{mdf::detail::MdfConverter}}
+\doxysubsubsection{\texorpdfstring{SaveQueue()}{SaveQueue()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf\+Converter\+::\+Save\+Queue (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&}]{lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1MdfConverter_a19f58f5427a96c7aa8f07652e1c6f3ab}\label{classmdf_1_1detail_1_1MdfConverter_a19f58f5427a96c7aa8f07652e1c6f3ab}} 
+\index{mdf::detail::MdfConverter@{mdf::detail::MdfConverter}!SaveQueueCompressed@{SaveQueueCompressed}}
+\index{SaveQueueCompressed@{SaveQueueCompressed}!mdf::detail::MdfConverter@{mdf::detail::MdfConverter}}
+\doxysubsubsection{\texorpdfstring{SaveQueueCompressed()}{SaveQueueCompressed()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf\+Converter\+::\+Save\+Queue\+Compressed (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+lock$<$ std\+::mutex $>$ \&}]{lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1Mdf4Writer_a96049f6f6046126828a455e132ec2f6d}{mdf\+::detail\+::\+Mdf4\+Writer}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1MdfConverter_a43176b68658ad7122e3b7b39d5e66ac5}\label{classmdf_1_1detail_1_1MdfConverter_a43176b68658ad7122e3b7b39d5e66ac5}} 
+\index{mdf::detail::MdfConverter@{mdf::detail::MdfConverter}!SaveSample@{SaveSample}}
+\index{SaveSample@{SaveSample}!mdf::detail::MdfConverter@{mdf::detail::MdfConverter}}
+\doxysubsubsection{\texorpdfstring{SaveSample()}{SaveSample()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf\+Converter\+::\+Save\+Sample (\begin{DoxyParamCaption}\item[{const IChannel\+Group \&}]{group,  }\item[{uint64\+\_\+t}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1MdfConverter_a8cb69f185942a885857e5d163ff6561c}\label{classmdf_1_1detail_1_1MdfConverter_a8cb69f185942a885857e5d163ff6561c}} 
+\index{mdf::detail::MdfConverter@{mdf::detail::MdfConverter}!TrimQueue@{TrimQueue}}
+\index{TrimQueue@{TrimQueue}!mdf::detail::MdfConverter@{mdf::detail::MdfConverter}}
+\doxysubsubsection{\texorpdfstring{TrimQueue()}{TrimQueue()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Mdf\+Converter\+::\+Trim\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Trims the sample queue. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{mdfconverter_8h}{mdfconverter.\+h}}\item 
+src/\mbox{\hyperlink{mdfconverter_8cpp}{mdfconverter.\+cpp}}\end{DoxyCompactItemize}

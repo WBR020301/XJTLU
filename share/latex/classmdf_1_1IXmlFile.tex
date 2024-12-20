@@ -1,0 +1,513 @@
+\hypertarget{classmdf_1_1IXmlFile}{}\doxysection{mdf\+::IXml\+File Class Reference}
+\label{classmdf_1_1IXmlFile}\index{mdf::IXmlFile@{mdf::IXmlFile}}
+
+
+Interface class that defines an XML parser.  
+
+
+
+
+{\ttfamily \#include \char`\"{}ixmlfile.\+h\char`\"{}}
+
+
+
+Inheritance diagram for mdf\+::IXml\+File\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classmdf_1_1IXmlFile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for mdf\+::IXml\+File\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classmdf_1_1IXmlFile__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classmdf_1_1IXmlFile_a9564b578e75b3ad7f72d4042f872f900}{$\sim$\+IXml\+File}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1IXmlFile_aca6caf5ee8fc45508992f9e473b58c0d}{File\+Name}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Sets the file name (full path). \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1IXmlFile_ac7b3d78f4d4677d32666712dafc70960}{File\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Return the full path file name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1IXmlFile_aa725de6a677b5ae2746821073f9bacd1}{File\+Name\+Without\+Path}} () const
+\begin{DoxyCompactList}\small\item\em File name without path. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1IXmlFile_a432813f3cb375817a3ba61330f9c0cc0}{Version}} () const
+\begin{DoxyCompactList}\small\item\em Returns the XML file version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1IXmlFile_ac0139f643515298c81343adfdc088c05}{Version}} (const std\+::string \&version)
+\begin{DoxyCompactList}\small\item\em Sets the version of the XML file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1IXmlFile_a1d7f9b89d401b566c25f80900673c8fa}{Encoding}} () const
+\begin{DoxyCompactList}\small\item\em Return the character encoding of the XML file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1IXmlFile_a709bd06cbdddfae8689161b46912961a}{Encoding}} (const std\+::string \&encoding)
+\begin{DoxyCompactList}\small\item\em Sets the XML file encoding. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmdf_1_1IXmlFile_af237ac2cd3717420ff7f6d31dfbfd27c}{Standalone}} () const
+\begin{DoxyCompactList}\small\item\em Returns true is the XML file is stand-\/alone. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1IXmlFile_af8eddc0a961ced7b844ebbf1c4535a77}{Root\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Returns the name of the root tag. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmdf_1_1IXmlNode}{IXml\+Node}} \& \mbox{\hyperlink{classmdf_1_1IXmlFile_a07b03fb2ab5dd8fad4f5ca04ae5d9068}{Root\+Name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Create the root tag in an XML file object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1IXmlFile_a452b8ddb4ddfba110dea0f1259b7f28e}{Style\+Sheet}} () const
+\begin{DoxyCompactList}\small\item\em Returns the used style sheet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1IXmlFile_a605f7b9d4850efa29944b052c5e28090}{Style\+Sheet}} (const std\+::string \&style\+\_\+sheet)
+\begin{DoxyCompactList}\small\item\em Sets the style sheet. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{classmdf_1_1IXmlFile_ad1b516a55c3e8b2c64a9f0812467214a}{Property}} (const std\+::string \&key, const T \&def=\{\}) const
+\begin{DoxyCompactList}\small\item\em Returns an XML tags value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classmdf_1_1IXmlFile_aa1c08d37046c30bcf3bfc812863e6610}{Set\+Property}} (const std\+::string \&key, const T \&value)
+\begin{DoxyCompactList}\small\item\em Sets a property tag value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1IXmlFile_a3ef25a533a49d65f477bec57af51ea23}{Get\+Child\+List}} (\mbox{\hyperlink{classmdf_1_1IXmlNode_af91beb4323ef973b04d3ffe58652d9f2}{IXml\+Node\+::\+Child\+List}} \&child\+\_\+list) const
+\begin{DoxyCompactList}\small\item\em Returns a list of child tags below the root tag. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classmdf_1_1IXmlNode}{IXml\+Node}} $\ast$ \mbox{\hyperlink{classmdf_1_1IXmlFile_aa13874bca8e1d82e9fb8ad5f0beadef6}{Get\+Node}} (const std\+::string \&tag) const
+\begin{DoxyCompactList}\small\item\em Returns a node with a tag name. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classmdf_1_1IXmlFile_a47d9907daff172c32aac0ddb63e74110}{Parse\+File}} ()
+\begin{DoxyCompactList}\small\item\em Parses the XML file. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classmdf_1_1IXmlFile_ababd57ea97e23ff4f5581812d40d8c8a}{Parse\+String}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Parses a string instead of a file. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classmdf_1_1IXmlFile_a438aadbff33cc8ad981a12b7e269b4f7}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the internals i.\+e. ready for a new parsing. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classmdf_1_1IXmlFile_a1aadbeec5e6e4ed44fa28c88829c31cf}{Write\+File}} ()
+\begin{DoxyCompactList}\small\item\em Writes the XML file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1IXmlFile_a58c67587a73090a9052a4ad5e3d4a35a}{Write\+String}} (bool skip\+\_\+header=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1IXmlFile_a0b0dff9964fd2328df645cd2b00af9e0}{IXml\+File}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor is hidden from external users. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classmdf_1_1IXmlNode}{IXml\+Node}} $>$ \mbox{\hyperlink{classmdf_1_1IXmlFile_a45d718b774c98cda89b49c7dc09317cd}{Create\+Node}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Creates a new node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1IXmlFile_a02b10552f688db56eeb3af020ff6ba23}{filename\+\_\+}}
+\begin{DoxyCompactList}\small\item\em File name with full path. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1IXmlFile_af0e2e340db39fe018ddc571f7cb21b72}{version\+\_\+}} = \char`\"{}1.\+0\char`\"{}
+\begin{DoxyCompactList}\small\item\em Version of the XML file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1IXmlFile_ad0a1e53dc36a21af120c0e960d18bd57}{encoding\+\_\+}} = \char`\"{}UTF-\/8\char`\"{}
+\begin{DoxyCompactList}\small\item\em Encoding of strings in the XML file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1IXmlFile_a69ce1e5dc6ce9708b2cc8edd6584d403}{style\+\_\+sheet\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Optional style sheet. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmdf_1_1IXmlFile_a82621adb3d60ece7d41400a99f3d9819}{standalone\+\_\+}} = true
+\begin{DoxyCompactList}\small\item\em True of the file is standalone. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classmdf_1_1IXmlNode}{IXml\+Node}} $>$ \mbox{\hyperlink{classmdf_1_1IXmlFile_a71d9ff96fe72367d0dbc420914c534a1}{root\+\_\+node\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pointer to the root node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface class that defines an XML parser. 
+
+The interface shall hide the implementation code of an XML parser. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a9564b578e75b3ad7f72d4042f872f900}\label{classmdf_1_1IXmlFile_a9564b578e75b3ad7f72d4042f872f900}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!````~IXmlFile@{$\sim$IXmlFile}}
+\index{````~IXmlFile@{$\sim$IXmlFile}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{$\sim$IXmlFile()}{~IXmlFile()}}
+{\footnotesize\ttfamily virtual mdf\+::\+IXml\+File\+::$\sim$\+IXml\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a0b0dff9964fd2328df645cd2b00af9e0}\label{classmdf_1_1IXmlFile_a0b0dff9964fd2328df645cd2b00af9e0}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!IXmlFile@{IXmlFile}}
+\index{IXmlFile@{IXmlFile}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{IXmlFile()}{IXmlFile()}}
+{\footnotesize\ttfamily mdf\+::\+IXml\+File\+::\+IXml\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+Default constructor is hidden from external users. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a45d718b774c98cda89b49c7dc09317cd}\label{classmdf_1_1IXmlFile_a45d718b774c98cda89b49c7dc09317cd}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!CreateNode@{CreateNode}}
+\index{CreateNode@{CreateNode}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{CreateNode()}{CreateNode()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classmdf_1_1IXmlNode}{IXml\+Node}} $>$ mdf\+::\+IXml\+File\+::\+Create\+Node (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates a new node. 
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a1d7f9b89d401b566c25f80900673c8fa}\label{classmdf_1_1IXmlFile_a1d7f9b89d401b566c25f80900673c8fa}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!Encoding@{Encoding}}
+\index{Encoding@{Encoding}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{Encoding()}{Encoding()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+IXml\+File\+::\+Encoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the character encoding of the XML file. 
+
+Returns the character encoding of the XML file. Standard encoding is UTF-\/8. \begin{DoxyReturn}{Returns}
+XML encoding. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a709bd06cbdddfae8689161b46912961a}\label{classmdf_1_1IXmlFile_a709bd06cbdddfae8689161b46912961a}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!Encoding@{Encoding}}
+\index{Encoding@{Encoding}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{Encoding()}{Encoding()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::\+IXml\+File\+::\+Encoding (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the XML file encoding. 
+
+Sets the XML file encoding. By default the UTF-\/8 encoding is used. 
+\begin{DoxyParams}{Parameters}
+{\em encoding} & XML file encoding \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_ac7b3d78f4d4677d32666712dafc70960}\label{classmdf_1_1IXmlFile_ac7b3d78f4d4677d32666712dafc70960}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!FileName@{FileName}}
+\index{FileName@{FileName}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{FileName()}{FileName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+IXml\+File\+::\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the full path file name. 
+
+\begin{DoxyReturn}{Returns}
+Full path to the file name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_aca6caf5ee8fc45508992f9e473b58c0d}\label{classmdf_1_1IXmlFile_aca6caf5ee8fc45508992f9e473b58c0d}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!FileName@{FileName}}
+\index{FileName@{FileName}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{FileName()}{FileName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::\+IXml\+File\+::\+File\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Sets the file name (full path). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File name with full path \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_aa725de6a677b5ae2746821073f9bacd1}\label{classmdf_1_1IXmlFile_aa725de6a677b5ae2746821073f9bacd1}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!FileNameWithoutPath@{FileNameWithoutPath}}
+\index{FileNameWithoutPath@{FileNameWithoutPath}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{FileNameWithoutPath()}{FileNameWithoutPath()}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+IXml\+File\+::\+File\+Name\+Without\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+File name without path. 
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a3ef25a533a49d65f477bec57af51ea23}\label{classmdf_1_1IXmlFile_a3ef25a533a49d65f477bec57af51ea23}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!GetChildList@{GetChildList}}
+\index{GetChildList@{GetChildList}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{GetChildList()}{GetChildList()}}
+{\footnotesize\ttfamily void mdf\+::\+IXml\+File\+::\+Get\+Child\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmdf_1_1IXmlNode_af91beb4323ef973b04d3ffe58652d9f2}{IXml\+Node\+::\+Child\+List}} \&}]{child\+\_\+list }\end{DoxyParamCaption}) const}
+
+
+
+Returns a list of child tags below the root tag. 
+
+Returns a list of tags below the root tag. 
+\begin{DoxyParams}{Parameters}
+{\em child\+\_\+list} & List of main tags in the file, Returns a list of XML tags (nodes). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_aa13874bca8e1d82e9fb8ad5f0beadef6}\label{classmdf_1_1IXmlFile_aa13874bca8e1d82e9fb8ad5f0beadef6}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!GetNode@{GetNode}}
+\index{GetNode@{GetNode}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{GetNode()}{GetNode()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classmdf_1_1IXmlNode}{IXml\+Node}} $\ast$ mdf\+::\+IXml\+File\+::\+Get\+Node (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tag }\end{DoxyParamCaption}) const}
+
+
+
+Returns a node with a tag name. 
+
+Returns a (unique) node with a specific tag name 
+\begin{DoxyParams}{Parameters}
+{\em tag} & Tag name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer ti the node. Returns a tag node. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a47d9907daff172c32aac0ddb63e74110}\label{classmdf_1_1IXmlFile_a47d9907daff172c32aac0ddb63e74110}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!ParseFile@{ParseFile}}
+\index{ParseFile@{ParseFile}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{ParseFile()}{ParseFile()}}
+{\footnotesize\ttfamily bool mdf\+::\+IXml\+File\+::\+Parse\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parses the XML file. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classmdf_1_1ExpatXml_acd6bb8e45f1c648d84a7b6abc53d5f2d}{mdf\+::\+Expat\+Xml}}.
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_ababd57ea97e23ff4f5581812d40d8c8a}\label{classmdf_1_1IXmlFile_ababd57ea97e23ff4f5581812d40d8c8a}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!ParseString@{ParseString}}
+\index{ParseString@{ParseString}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{ParseString()}{ParseString()}}
+{\footnotesize\ttfamily bool mdf\+::\+IXml\+File\+::\+Parse\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parses a string instead of a file. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classmdf_1_1ExpatXml_ab0cf0b94bac2bd86b8a3f7d5c2b99099}{mdf\+::\+Expat\+Xml}}.
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_ad1b516a55c3e8b2c64a9f0812467214a}\label{classmdf_1_1IXmlFile_ad1b516a55c3e8b2c64a9f0812467214a}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!Property@{Property}}
+\index{Property@{Property}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{Property()}{Property()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T mdf\+::\+IXml\+File\+::\+Property (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{const T \&}]{def = {\ttfamily \{\}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an XML tags value. 
+
+Returns a value of an XML tag excluding the root tag. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type can be string, numbers and boolean. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em key} & Tag name with the value. \\
+\hline
+\mbox{\texttt{ in}}  & {\em def} & Default value if not found. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the tag value or default value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a438aadbff33cc8ad981a12b7e269b4f7}\label{classmdf_1_1IXmlFile_a438aadbff33cc8ad981a12b7e269b4f7}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!Reset@{Reset}}
+\index{Reset@{Reset}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void mdf\+::\+IXml\+File\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reset the internals i.\+e. ready for a new parsing. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classmdf_1_1ExpatXml_a602dce73ab7d126d9b36db5fdb5ba5ee}{mdf\+::\+Expat\+Xml}}.
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_af8eddc0a961ced7b844ebbf1c4535a77}\label{classmdf_1_1IXmlFile_af8eddc0a961ced7b844ebbf1c4535a77}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!RootName@{RootName}}
+\index{RootName@{RootName}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{RootName()}{RootName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+IXml\+File\+::\+Root\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name of the root tag. 
+
+\begin{DoxyReturn}{Returns}
+Name of the root tag 
+\end{DoxyReturn}
+$<$ Return the name of the root tag.\mbox{\Hypertarget{classmdf_1_1IXmlFile_a07b03fb2ab5dd8fad4f5ca04ae5d9068}\label{classmdf_1_1IXmlFile_a07b03fb2ab5dd8fad4f5ca04ae5d9068}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!RootName@{RootName}}
+\index{RootName@{RootName}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{RootName()}{RootName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmdf_1_1IXmlNode}{IXml\+Node}} \& mdf\+::\+IXml\+File\+::\+Root\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Create the root tag in an XML file object. 
+
+Creates the root tag and sets its tag name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the root tag \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_aa1c08d37046c30bcf3bfc812863e6610}\label{classmdf_1_1IXmlFile_aa1c08d37046c30bcf3bfc812863e6610}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!SetProperty@{SetProperty}}
+\index{SetProperty@{SetProperty}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{SetProperty()}{SetProperty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void mdf\+::\+IXml\+File\+::\+Set\+Property (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets a property tag value. 
+
+Sets a property tag value 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of value \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Tag name \\
+\hline
+{\em value} & Tag value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_af237ac2cd3717420ff7f6d31dfbfd27c}\label{classmdf_1_1IXmlFile_af237ac2cd3717420ff7f6d31dfbfd27c}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!Standalone@{Standalone}}
+\index{Standalone@{Standalone}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{Standalone()}{Standalone()}}
+{\footnotesize\ttfamily bool mdf\+::\+IXml\+File\+::\+Standalone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true is the XML file is stand-\/alone. 
+
+\begin{DoxyReturn}{Returns}
+True if the XML file is stand-\/alone. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a452b8ddb4ddfba110dea0f1259b7f28e}\label{classmdf_1_1IXmlFile_a452b8ddb4ddfba110dea0f1259b7f28e}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!StyleSheet@{StyleSheet}}
+\index{StyleSheet@{StyleSheet}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{StyleSheet()}{StyleSheet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+IXml\+File\+::\+Style\+Sheet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the used style sheet. 
+
+Returns the used style sheet. \begin{DoxyReturn}{Returns}
+The style sheet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a605f7b9d4850efa29944b052c5e28090}\label{classmdf_1_1IXmlFile_a605f7b9d4850efa29944b052c5e28090}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!StyleSheet@{StyleSheet}}
+\index{StyleSheet@{StyleSheet}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{StyleSheet()}{StyleSheet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::\+IXml\+File\+::\+Style\+Sheet (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{style\+\_\+sheet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the style sheet. 
+
+Sets the style sheet. Include full url path. 
+\begin{DoxyParams}{Parameters}
+{\em style\+\_\+sheet} & URL to style sheet. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a432813f3cb375817a3ba61330f9c0cc0}\label{classmdf_1_1IXmlFile_a432813f3cb375817a3ba61330f9c0cc0}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!Version@{Version}}
+\index{Version@{Version}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{Version()}{Version()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+IXml\+File\+::\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the XML file version. 
+
+Returns the XML file version. Typical 1.\+0 or 1.\+1. \begin{DoxyReturn}{Returns}
+XML version. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_ac0139f643515298c81343adfdc088c05}\label{classmdf_1_1IXmlFile_ac0139f643515298c81343adfdc088c05}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!Version@{Version}}
+\index{Version@{Version}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{Version()}{Version()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::\+IXml\+File\+::\+Version (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the version of the XML file. 
+
+Sets the XML file version. Set default to 1.\+0. 
+\begin{DoxyParams}{Parameters}
+{\em version} & XML version. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a1aadbeec5e6e4ed44fa28c88829c31cf}\label{classmdf_1_1IXmlFile_a1aadbeec5e6e4ed44fa28c88829c31cf}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!WriteFile@{WriteFile}}
+\index{WriteFile@{WriteFile}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{WriteFile()}{WriteFile()}}
+{\footnotesize\ttfamily bool mdf\+::\+IXml\+File\+::\+Write\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes the XML file. 
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a58c67587a73090a9052a4ad5e3d4a35a}\label{classmdf_1_1IXmlFile_a58c67587a73090a9052a4ad5e3d4a35a}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!WriteString@{WriteString}}
+\index{WriteString@{WriteString}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{WriteString()}{WriteString()}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+IXml\+File\+::\+Write\+String (\begin{DoxyParamCaption}\item[{bool}]{skip\+\_\+header = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Creates a string that is a whole XML file. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_ad0a1e53dc36a21af120c0e960d18bd57}\label{classmdf_1_1IXmlFile_ad0a1e53dc36a21af120c0e960d18bd57}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!encoding\_@{encoding\_}}
+\index{encoding\_@{encoding\_}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{encoding\_}{encoding\_}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+IXml\+File\+::encoding\+\_\+ = \char`\"{}UTF-\/8\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Encoding of strings in the XML file. 
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a02b10552f688db56eeb3af020ff6ba23}\label{classmdf_1_1IXmlFile_a02b10552f688db56eeb3af020ff6ba23}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!filename\_@{filename\_}}
+\index{filename\_@{filename\_}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{filename\_}{filename\_}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+IXml\+File\+::filename\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+File name with full path. 
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a71d9ff96fe72367d0dbc420914c534a1}\label{classmdf_1_1IXmlFile_a71d9ff96fe72367d0dbc420914c534a1}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!root\_node\_@{root\_node\_}}
+\index{root\_node\_@{root\_node\_}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{root\_node\_}{root\_node\_}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classmdf_1_1IXmlNode}{IXml\+Node}}$>$ mdf\+::\+IXml\+File\+::root\+\_\+node\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pointer to the root node. 
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a82621adb3d60ece7d41400a99f3d9819}\label{classmdf_1_1IXmlFile_a82621adb3d60ece7d41400a99f3d9819}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!standalone\_@{standalone\_}}
+\index{standalone\_@{standalone\_}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{standalone\_}{standalone\_}}
+{\footnotesize\ttfamily bool mdf\+::\+IXml\+File\+::standalone\+\_\+ = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+True of the file is standalone. 
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_a69ce1e5dc6ce9708b2cc8edd6584d403}\label{classmdf_1_1IXmlFile_a69ce1e5dc6ce9708b2cc8edd6584d403}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!style\_sheet\_@{style\_sheet\_}}
+\index{style\_sheet\_@{style\_sheet\_}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{style\_sheet\_}{style\_sheet\_}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+IXml\+File\+::style\+\_\+sheet\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Optional style sheet. 
+
+\mbox{\Hypertarget{classmdf_1_1IXmlFile_af0e2e340db39fe018ddc571f7cb21b72}\label{classmdf_1_1IXmlFile_af0e2e340db39fe018ddc571f7cb21b72}} 
+\index{mdf::IXmlFile@{mdf::IXmlFile}!version\_@{version\_}}
+\index{version\_@{version\_}!mdf::IXmlFile@{mdf::IXmlFile}}
+\doxysubsubsection{\texorpdfstring{version\_}{version\_}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+IXml\+File\+::version\+\_\+ = \char`\"{}1.\+0\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Version of the XML file. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ixmlfile_8h}{ixmlfile.\+h}}\item 
+src/\mbox{\hyperlink{ixmlfile_8cpp}{ixmlfile.\+cpp}}\end{DoxyCompactItemize}

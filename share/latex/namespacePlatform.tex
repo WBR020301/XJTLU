@@ -1,0 +1,72 @@
+\hypertarget{namespacePlatform}{}\doxysection{Platform Namespace Reference}
+\label{namespacePlatform}\index{Platform@{Platform}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacePlatform_ab2b04dbcdb810f59df0085fac319aa15}{stricmp}} (const char $\ast$\+\_\+\+\_\+s1, const char $\ast$\+\_\+\+\_\+s2)
+\item 
+int \mbox{\hyperlink{namespacePlatform_a2992798b3b8e8f31469b1765367d5d1d}{strnicmp}} (const char $\ast$\+\_\+\+\_\+s1, const char $\ast$\+\_\+\+\_\+s2, size\+\_\+t \+\_\+\+\_\+n)
+\item 
+void \mbox{\hyperlink{namespacePlatform_af9ade02c10277694f463de322b1e3387}{strerror}} (int \+\_\+\+\_\+errnum, char $\ast$\+\_\+\+\_\+buf, size\+\_\+t \+\_\+\+\_\+buflen)
+\item 
+int64\+\_\+t \mbox{\hyperlink{namespacePlatform_a44d24f50ecb5210a146260eda853ffd0}{ftell64}} (std\+::\+FILE $\ast$\+\_\+\+\_\+stream)
+\item 
+int \mbox{\hyperlink{namespacePlatform_a39e223fc23d4c9778e39635a1dfff50f}{fseek64}} (FILE $\ast$\+\_\+\+\_\+stream, int64\+\_\+t \+\_\+\+\_\+off, int \+\_\+\+\_\+whence)
+\item 
+int \mbox{\hyperlink{namespacePlatform_a9a700067079a7059ec942c0af244f7e3}{fileopen}} (FILE $\ast$$\ast$out, const char $\ast$\+\_\+\+\_\+restrict \+\_\+\+\_\+filename, const char $\ast$\+\_\+\+\_\+restrict \+\_\+\+\_\+modes)
+\item 
+int \mbox{\hyperlink{namespacePlatform_a82c1537f47c6270514c977d48f062d88}{fseek64}} (std\+::\+FILE $\ast$\+\_\+\+\_\+stream, int64\+\_\+t \+\_\+\+\_\+off, int \+\_\+\+\_\+whence)
+\item 
+int \mbox{\hyperlink{namespacePlatform_a247e6fb8be647f320c477950896c662f}{fileopen}} (std\+::\+FILE $\ast$$\ast$out, const char $\ast$\+\_\+\+\_\+restrict \+\_\+\+\_\+filename, const char $\ast$\+\_\+\+\_\+restrict \+\_\+\+\_\+modes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacePlatform_a9a700067079a7059ec942c0af244f7e3}\label{namespacePlatform_a9a700067079a7059ec942c0af244f7e3}} 
+\index{Platform@{Platform}!fileopen@{fileopen}}
+\index{fileopen@{fileopen}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{fileopen()}{fileopen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Platform\+::fileopen (\begin{DoxyParamCaption}\item[{FILE $\ast$$\ast$}]{out,  }\item[{const char $\ast$\+\_\+\+\_\+restrict}]{\+\_\+\+\_\+filename,  }\item[{const char $\ast$\+\_\+\+\_\+restrict}]{\+\_\+\+\_\+modes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePlatform_a247e6fb8be647f320c477950896c662f}\label{namespacePlatform_a247e6fb8be647f320c477950896c662f}} 
+\index{Platform@{Platform}!fileopen@{fileopen}}
+\index{fileopen@{fileopen}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{fileopen()}{fileopen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Platform\+::fileopen (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$$\ast$}]{out,  }\item[{const char $\ast$\+\_\+\+\_\+restrict}]{\+\_\+\+\_\+filename,  }\item[{const char $\ast$\+\_\+\+\_\+restrict}]{\+\_\+\+\_\+modes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePlatform_a39e223fc23d4c9778e39635a1dfff50f}\label{namespacePlatform_a39e223fc23d4c9778e39635a1dfff50f}} 
+\index{Platform@{Platform}!fseek64@{fseek64}}
+\index{fseek64@{fseek64}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{fseek64()}{fseek64()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Platform\+::fseek64 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{\+\_\+\+\_\+stream,  }\item[{int64\+\_\+t}]{\+\_\+\+\_\+off,  }\item[{int}]{\+\_\+\+\_\+whence }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePlatform_a82c1537f47c6270514c977d48f062d88}\label{namespacePlatform_a82c1537f47c6270514c977d48f062d88}} 
+\index{Platform@{Platform}!fseek64@{fseek64}}
+\index{fseek64@{fseek64}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{fseek64()}{fseek64()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Platform\+::fseek64 (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{\+\_\+\+\_\+stream,  }\item[{int64\+\_\+t}]{\+\_\+\+\_\+off,  }\item[{int}]{\+\_\+\+\_\+whence }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePlatform_a44d24f50ecb5210a146260eda853ffd0}\label{namespacePlatform_a44d24f50ecb5210a146260eda853ffd0}} 
+\index{Platform@{Platform}!ftell64@{ftell64}}
+\index{ftell64@{ftell64}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{ftell64()}{ftell64()}}
+{\footnotesize\ttfamily int64\+\_\+t Platform\+::ftell64 (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{\+\_\+\+\_\+stream }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePlatform_af9ade02c10277694f463de322b1e3387}\label{namespacePlatform_af9ade02c10277694f463de322b1e3387}} 
+\index{Platform@{Platform}!strerror@{strerror}}
+\index{strerror@{strerror}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{strerror()}{strerror()}}
+{\footnotesize\ttfamily void Platform\+::strerror (\begin{DoxyParamCaption}\item[{int}]{\+\_\+\+\_\+errnum,  }\item[{char $\ast$}]{\+\_\+\+\_\+buf,  }\item[{size\+\_\+t}]{\+\_\+\+\_\+buflen }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePlatform_ab2b04dbcdb810f59df0085fac319aa15}\label{namespacePlatform_ab2b04dbcdb810f59df0085fac319aa15}} 
+\index{Platform@{Platform}!stricmp@{stricmp}}
+\index{stricmp@{stricmp}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{stricmp()}{stricmp()}}
+{\footnotesize\ttfamily int Platform\+::stricmp (\begin{DoxyParamCaption}\item[{const char $\ast$}]{\+\_\+\+\_\+s1,  }\item[{const char $\ast$}]{\+\_\+\+\_\+s2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacePlatform_a2992798b3b8e8f31469b1765367d5d1d}\label{namespacePlatform_a2992798b3b8e8f31469b1765367d5d1d}} 
+\index{Platform@{Platform}!strnicmp@{strnicmp}}
+\index{strnicmp@{strnicmp}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{strnicmp()}{strnicmp()}}
+{\footnotesize\ttfamily int Platform\+::strnicmp (\begin{DoxyParamCaption}\item[{const char $\ast$}]{\+\_\+\+\_\+s1,  }\item[{const char $\ast$}]{\+\_\+\+\_\+s2,  }\item[{size\+\_\+t}]{\+\_\+\+\_\+n }\end{DoxyParamCaption})}
+

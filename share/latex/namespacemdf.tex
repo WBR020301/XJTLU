@@ -1,0 +1,198 @@
+\hypertarget{namespacemdf}{}\doxysection{mdf Namespace Reference}
+\label{namespacemdf}\index{mdf@{mdf}}
+
+
+mdflib  
+
+
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacemdf_1_1detail}{detail}}
+\begin{DoxyCompactList}\small\item\em mdflib \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmdf_1_1BigBuffer}{Big\+Buffer}}
+\item 
+class \mbox{\hyperlink{classmdf_1_1CgRange}{Cg\+Range}}
+\item 
+class \mbox{\hyperlink{classmdf_1_1DgRange}{Dg\+Range}}
+\begin{DoxyCompactList}\small\item\em Support class for handling range reads of an MDF file. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classmdf_1_1ExpatXml}{Expat\+Xml}}
+\begin{DoxyCompactList}\small\item\em Simple wrapper around the EXPAT parser. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classmdf_1_1IXmlFile}{IXml\+File}}
+\begin{DoxyCompactList}\small\item\em Interface class that defines an XML parser. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classmdf_1_1IXmlNode}{IXml\+Node}}
+\begin{DoxyCompactList}\small\item\em Interface class against a XML tag (node) in a XML file. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classmdf_1_1LittleBuffer}{Little\+Buffer}}
+\item 
+class \mbox{\hyperlink{classmdf_1_1WriteXml}{Write\+Xml}}
+\item 
+class \mbox{\hyperlink{classmdf_1_1XmlNode}{Xml\+Node}}
+\begin{DoxyCompactList}\small\item\em Implement an XML node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classmdf_1_1IXmlFile}{IXml\+File}} $>$ \mbox{\hyperlink{namespacemdf_a697bfb99200b96a30c2ea8721c5a2ae3}{Create\+Xml\+File}} (const std\+::string \&type=\char`\"{}Expat\char`\"{})
+\begin{DoxyCompactList}\small\item\em Creates an XML object that either parse or write. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacemdf_aeb78ebb2c6a5a61f14d37a05b7afd20a}{Create\+Md5\+File\+Checksum}} (const std\+::string \&file, std\+::vector$<$ uint8\+\_\+t $>$ \&md5)
+\item 
+std\+::string \mbox{\hyperlink{namespacemdf_a1173d96d8ea953eb45c110ac550ce628}{Create\+Md5\+File\+String}} (const std\+::string \&file)
+\item 
+bool \mbox{\hyperlink{namespacemdf_a36bdce80788796d1ee3482bfe48c3f96}{Is\+Mdf\+File}} (const std\+::string \&filename)
+\item 
+Channel\+Observer\+Ptr \mbox{\hyperlink{namespacemdf_a16a866b3ee857add084d1d8e8b2e7aa3}{Create\+Channel\+Observer}} (const IData\+Group \&data\+\_\+group, const IChannel\+Group \&group, const IChannel \&channel)
+\item 
+Channel\+Observer\+Ptr \mbox{\hyperlink{namespacemdf_aa3db89e1164d41e240176bbf3681aeb3}{Create\+Channel\+Observer}} (const IData\+Group \&dg\+\_\+group, const std\+::string \&channel\+\_\+name)
+\item 
+void \mbox{\hyperlink{namespacemdf_a7d36a3f5f140f8be0a7d4bebc9be7eeb}{Create\+Channel\+Observer\+For\+Channel\+Group}} (const IData\+Group \&data\+\_\+group, const IChannel\+Group \&group, Channel\+Observer\+List \&dest)
+\item 
+bool \mbox{\hyperlink{namespacemdf_ac4fa205e3e6a33b356f43d2a11e36f83}{Deflate}} (FILE $\ast$in, FILE $\ast$out)
+\item 
+bool \mbox{\hyperlink{namespacemdf_a2204306496d6be8d0755d78c6b2f3f8a}{Deflate}} (const std\+::string \&filename, Byte\+Array \&buf\+\_\+out)
+\item 
+bool \mbox{\hyperlink{namespacemdf_aadc429ba87b1a6757c12e4d8bf3c3583}{Deflate}} (const Byte\+Array \&buf\+\_\+in, Byte\+Array \&buf\+\_\+out)
+\item 
+bool \mbox{\hyperlink{namespacemdf_a0d68d0de49ecec2f114dbfa84445f0e0}{Inflate}} (std\+::\+FILE $\ast$in, std\+::\+FILE $\ast$out)
+\item 
+bool \mbox{\hyperlink{namespacemdf_a5fb9cd270f5eb188adb9e3da05638f75}{Inflate}} (std\+::\+FILE $\ast$in, std\+::\+FILE $\ast$out, uint64\+\_\+t nof\+\_\+bytes)
+\item 
+bool \mbox{\hyperlink{namespacemdf_a81f395794b1a59be0ea8fc6a90225b1e}{Inflate}} (const Byte\+Array \&buf\+\_\+in, Byte\+Array \&buf\+\_\+out)
+\item 
+bool \mbox{\hyperlink{namespacemdf_accc37997e14c1a4b89b3d1a808e0f8da}{Inflate}} (const Byte\+Array \&buf\+\_\+in, std\+::\+FILE $\ast$to\+\_\+file)
+\item 
+void \mbox{\hyperlink{namespacemdf_a8888854dace05f8886586643a4e566cd}{Transpose}} (Byte\+Array \&data, size\+\_\+t record\+\_\+size)
+\item 
+void \mbox{\hyperlink{namespacemdf_a6dcedb9a891a56428a5390e5cc4b5b57}{Inv\+Transpose}} (Byte\+Array \&data, size\+\_\+t record\+\_\+size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+mdflib 
+
+\DoxyHorRuler{0}
+ \begin{DoxyAuthor}{Author}
+Ji Wei (BCSC/\+EPA4, XC-\/\+AS/\+ENG-\/\+PMT2-\/\+CN) (\href{mailto:wei.ji2@cn.bosch.com}{\texttt{ wei.\+ji2@cn.\+bosch.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/11-\/1
+\end{DoxyDate}
+@\+Copyright (c) 2024-\/2030 Robert Bosch GmbH. All rights reserved. \DoxyHorRuler{0}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacemdf_a16a866b3ee857add084d1d8e8b2e7aa3}\label{namespacemdf_a16a866b3ee857add084d1d8e8b2e7aa3}} 
+\index{mdf@{mdf}!CreateChannelObserver@{CreateChannelObserver}}
+\index{CreateChannelObserver@{CreateChannelObserver}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{CreateChannelObserver()}{CreateChannelObserver()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Channel\+Observer\+Ptr mdf\+::\+Create\+Channel\+Observer (\begin{DoxyParamCaption}\item[{const IData\+Group \&}]{data\+\_\+group,  }\item[{const IChannel\+Group \&}]{group,  }\item[{const IChannel \&}]{channel }\end{DoxyParamCaption})}
+
+Creates a channel sample observer. The sample observer creates internal memory for all samples.~\newline
+ The function also attach the observer to the notifier (see observer pattern). The destructor of the channel observer detach the observer.
+\begin{DoxyParams}{Parameters}
+{\em data\+\_\+group} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacemdf_aa3db89e1164d41e240176bbf3681aeb3}\label{namespacemdf_aa3db89e1164d41e240176bbf3681aeb3}} 
+\index{mdf@{mdf}!CreateChannelObserver@{CreateChannelObserver}}
+\index{CreateChannelObserver@{CreateChannelObserver}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{CreateChannelObserver()}{CreateChannelObserver()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Channel\+Observer\+Ptr mdf\+::\+Create\+Channel\+Observer (\begin{DoxyParamCaption}\item[{const IData\+Group \&}]{dg\+\_\+group,  }\item[{const std\+::string \&}]{channel\+\_\+name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_a7d36a3f5f140f8be0a7d4bebc9be7eeb}\label{namespacemdf_a7d36a3f5f140f8be0a7d4bebc9be7eeb}} 
+\index{mdf@{mdf}!CreateChannelObserverForChannelGroup@{CreateChannelObserverForChannelGroup}}
+\index{CreateChannelObserverForChannelGroup@{CreateChannelObserverForChannelGroup}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{CreateChannelObserverForChannelGroup()}{CreateChannelObserverForChannelGroup()}}
+{\footnotesize\ttfamily void mdf\+::\+Create\+Channel\+Observer\+For\+Channel\+Group (\begin{DoxyParamCaption}\item[{const IData\+Group \&}]{data\+\_\+group,  }\item[{const IChannel\+Group \&}]{group,  }\item[{Channel\+Observer\+List \&}]{dest }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_aeb78ebb2c6a5a61f14d37a05b7afd20a}\label{namespacemdf_aeb78ebb2c6a5a61f14d37a05b7afd20a}} 
+\index{mdf@{mdf}!CreateMd5FileChecksum@{CreateMd5FileChecksum}}
+\index{CreateMd5FileChecksum@{CreateMd5FileChecksum}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{CreateMd5FileChecksum()}{CreateMd5FileChecksum()}}
+{\footnotesize\ttfamily bool mdf\+::\+Create\+Md5\+File\+Checksum (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file,  }\item[{std\+::vector$<$ uint8\+\_\+t $>$ \&}]{md5 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_a1173d96d8ea953eb45c110ac550ce628}\label{namespacemdf_a1173d96d8ea953eb45c110ac550ce628}} 
+\index{mdf@{mdf}!CreateMd5FileString@{CreateMd5FileString}}
+\index{CreateMd5FileString@{CreateMd5FileString}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{CreateMd5FileString()}{CreateMd5FileString()}}
+{\footnotesize\ttfamily std\+::string mdf\+::\+Create\+Md5\+File\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_a697bfb99200b96a30c2ea8721c5a2ae3}\label{namespacemdf_a697bfb99200b96a30c2ea8721c5a2ae3}} 
+\index{mdf@{mdf}!CreateXmlFile@{CreateXmlFile}}
+\index{CreateXmlFile@{CreateXmlFile}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{CreateXmlFile()}{CreateXmlFile()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classmdf_1_1IXmlFile}{IXml\+File}} $>$ mdf\+::\+Create\+Xml\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type = {\ttfamily \char`\"{}Expat\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Creates an XML object that either parse or write. 
+
+Creates an XML object that either parse a file or string or saves the object to an XML file. 
+\begin{DoxyParams}{Parameters}
+{\em type} & String that creates an implementation of an XML object. By default is the Expat parser used. Choose \textquotesingle{}Expat\textquotesingle{} or \textquotesingle{}File\+Writer\textquotesingle{}. The latter only creates an XML file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A smart pointer to an XML object. Creates a XML parser 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacemdf_aadc429ba87b1a6757c12e4d8bf3c3583}\label{namespacemdf_aadc429ba87b1a6757c12e4d8bf3c3583}} 
+\index{mdf@{mdf}!Deflate@{Deflate}}
+\index{Deflate@{Deflate}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{Deflate()}{Deflate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool mdf\+::\+Deflate (\begin{DoxyParamCaption}\item[{const Byte\+Array \&}]{buf\+\_\+in,  }\item[{Byte\+Array \&}]{buf\+\_\+out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_a2204306496d6be8d0755d78c6b2f3f8a}\label{namespacemdf_a2204306496d6be8d0755d78c6b2f3f8a}} 
+\index{mdf@{mdf}!Deflate@{Deflate}}
+\index{Deflate@{Deflate}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{Deflate()}{Deflate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool mdf\+::\+Deflate (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{Byte\+Array \&}]{buf\+\_\+out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_ac4fa205e3e6a33b356f43d2a11e36f83}\label{namespacemdf_ac4fa205e3e6a33b356f43d2a11e36f83}} 
+\index{mdf@{mdf}!Deflate@{Deflate}}
+\index{Deflate@{Deflate}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{Deflate()}{Deflate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool mdf\+::\+Deflate (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{in,  }\item[{FILE $\ast$}]{out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_a81f395794b1a59be0ea8fc6a90225b1e}\label{namespacemdf_a81f395794b1a59be0ea8fc6a90225b1e}} 
+\index{mdf@{mdf}!Inflate@{Inflate}}
+\index{Inflate@{Inflate}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{Inflate()}{Inflate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily bool mdf\+::\+Inflate (\begin{DoxyParamCaption}\item[{const Byte\+Array \&}]{buf\+\_\+in,  }\item[{Byte\+Array \&}]{buf\+\_\+out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_accc37997e14c1a4b89b3d1a808e0f8da}\label{namespacemdf_accc37997e14c1a4b89b3d1a808e0f8da}} 
+\index{mdf@{mdf}!Inflate@{Inflate}}
+\index{Inflate@{Inflate}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{Inflate()}{Inflate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily bool mdf\+::\+Inflate (\begin{DoxyParamCaption}\item[{const Byte\+Array \&}]{buf\+\_\+in,  }\item[{std\+::\+FILE $\ast$}]{to\+\_\+file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_a0d68d0de49ecec2f114dbfa84445f0e0}\label{namespacemdf_a0d68d0de49ecec2f114dbfa84445f0e0}} 
+\index{mdf@{mdf}!Inflate@{Inflate}}
+\index{Inflate@{Inflate}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{Inflate()}{Inflate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily bool mdf\+::\+Inflate (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{in,  }\item[{std\+::\+FILE $\ast$}]{out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_a5fb9cd270f5eb188adb9e3da05638f75}\label{namespacemdf_a5fb9cd270f5eb188adb9e3da05638f75}} 
+\index{mdf@{mdf}!Inflate@{Inflate}}
+\index{Inflate@{Inflate}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{Inflate()}{Inflate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily bool mdf\+::\+Inflate (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{in,  }\item[{std\+::\+FILE $\ast$}]{out,  }\item[{uint64\+\_\+t}]{nof\+\_\+bytes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_a6dcedb9a891a56428a5390e5cc4b5b57}\label{namespacemdf_a6dcedb9a891a56428a5390e5cc4b5b57}} 
+\index{mdf@{mdf}!InvTranspose@{InvTranspose}}
+\index{InvTranspose@{InvTranspose}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{InvTranspose()}{InvTranspose()}}
+{\footnotesize\ttfamily void mdf\+::\+Inv\+Transpose (\begin{DoxyParamCaption}\item[{Byte\+Array \&}]{data,  }\item[{size\+\_\+t}]{record\+\_\+size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_a36bdce80788796d1ee3482bfe48c3f96}\label{namespacemdf_a36bdce80788796d1ee3482bfe48c3f96}} 
+\index{mdf@{mdf}!IsMdfFile@{IsMdfFile}}
+\index{IsMdfFile@{IsMdfFile}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{IsMdfFile()}{IsMdfFile()}}
+{\footnotesize\ttfamily bool mdf\+::\+Is\+Mdf\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemdf_a8888854dace05f8886586643a4e566cd}\label{namespacemdf_a8888854dace05f8886586643a4e566cd}} 
+\index{mdf@{mdf}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!mdf@{mdf}}
+\doxysubsubsection{\texorpdfstring{Transpose()}{Transpose()}}
+{\footnotesize\ttfamily void mdf\+::\+Transpose (\begin{DoxyParamCaption}\item[{Byte\+Array \&}]{data,  }\item[{size\+\_\+t}]{record\+\_\+size }\end{DoxyParamCaption})}
+

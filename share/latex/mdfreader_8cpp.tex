@@ -1,0 +1,41 @@
+\hypertarget{mdfreader_8cpp}{}\doxysection{src/mdfreader.cpp File Reference}
+\label{mdfreader_8cpp}\index{src/mdfreader.cpp@{src/mdfreader.cpp}}
+{\ttfamily \#include \char`\"{}mdf/mdfreader.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}channelobserver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dg4block.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}idblock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mdf/mdflogstream.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mdf4file.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}platform.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cn4block.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sr4block.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dgrange.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+Include dependency graph for mdfreader.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mdfreader_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacemdf}{mdf}}
+\begin{DoxyCompactList}\small\item\em mdflib \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacemdf_a36bdce80788796d1ee3482bfe48c3f96}{mdf\+::\+Is\+Mdf\+File}} (const std\+::string \&filename)
+\item 
+Channel\+Observer\+Ptr \mbox{\hyperlink{namespacemdf_a16a866b3ee857add084d1d8e8b2e7aa3}{mdf\+::\+Create\+Channel\+Observer}} (const IData\+Group \&data\+\_\+group, const IChannel\+Group \&group, const IChannel \&channel)
+\item 
+Channel\+Observer\+Ptr \mbox{\hyperlink{namespacemdf_aa3db89e1164d41e240176bbf3681aeb3}{mdf\+::\+Create\+Channel\+Observer}} (const IData\+Group \&dg\+\_\+group, const std\+::string \&channel\+\_\+name)
+\item 
+void \mbox{\hyperlink{namespacemdf_a7d36a3f5f140f8be0a7d4bebc9be7eeb}{mdf\+::\+Create\+Channel\+Observer\+For\+Channel\+Group}} (const IData\+Group \&data\+\_\+group, const IChannel\+Group \&group, Channel\+Observer\+List \&dest)
+\end{DoxyCompactItemize}

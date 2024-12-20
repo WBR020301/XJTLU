@@ -1,0 +1,150 @@
+\hypertarget{classmdf_1_1detail_1_1IdBlock}{}\doxysection{mdf\+::detail\+::Id\+Block Class Reference}
+\label{classmdf_1_1detail_1_1IdBlock}\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+
+
+{\ttfamily \#include $<$idblock.\+h$>$}
+
+
+
+Inheritance diagram for mdf\+::detail\+::Id\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmdf_1_1detail_1_1IdBlock__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for mdf\+::detail\+::Id\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmdf_1_1detail_1_1IdBlock__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_ae00567e830efffc3ab0d46cb2b9bb5e1}{Id\+Block}} ()
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_a38c5909c4ac2c9f2bf5c783fc747ed6a}{Get\+Block\+Property}} (\mbox{\hyperlink{namespacemdf_1_1detail_a77d8f89f34dbdad6659eaa35fc6d5501}{Block\+Property\+List}} \&dest) const override
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_a821a1a64035829b152788124f2ee675c}{Read}} (std\+::\+FILE $\ast$file) override
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_a50c0578781a25271e788e0a7bfbbe7e5}{Write}} (std\+::\+FILE $\ast$file) override
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_a7538707b7aba86ea7a450afba3fa4b96}{File\+Id}} () const
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_a4809bb679a7badbaadee5176607b0712}{Version\+String}} () const
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_a47e070fef78a57f8bd53d7d2115ddd54}{Program\+Id}} (const std\+::string \&program\+\_\+id)
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_a5155391d9e01caed6defedcf9e4300f5}{Program\+Id}} () const
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_a22a24c266c2a0122d688cfdf1cad20aa}{Is\+Finalized}} (bool finalized, std\+::\+FILE $\ast$file, uint16\+\_\+t standard\+\_\+flags, uint16\+\_\+t custom\+\_\+flags)
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_afe76d546a09f240fc878fa5e2eedc3b7}{Is\+Finalized}} (uint16\+\_\+t \&standard\+\_\+flags, uint16\+\_\+t \&custom\+\_\+flags) const
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_aa77bfdd7bd97b68b009f72f3c9b99b0a}{Minor\+Version}} (int minor)
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1IdBlock_a61560c3e3af15a1df5fd5aab209e5ec5}{Set\+Default\+Mdf3\+Values}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_ae00567e830efffc3ab0d46cb2b9bb5e1}\label{classmdf_1_1detail_1_1IdBlock_ae00567e830efffc3ab0d46cb2b9bb5e1}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!IdBlock@{IdBlock}}
+\index{IdBlock@{IdBlock}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{IdBlock()}{IdBlock()}}
+{\footnotesize\ttfamily mdf\+::detail\+::\+Id\+Block\+::\+Id\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_a7538707b7aba86ea7a450afba3fa4b96}\label{classmdf_1_1detail_1_1IdBlock_a7538707b7aba86ea7a450afba3fa4b96}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!FileId@{FileId}}
+\index{FileId@{FileId}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{FileId()}{FileId()}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Id\+Block\+::\+File\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_a38c5909c4ac2c9f2bf5c783fc747ed6a}\label{classmdf_1_1detail_1_1IdBlock_a38c5909c4ac2c9f2bf5c783fc747ed6a}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!GetBlockProperty@{GetBlockProperty}}
+\index{GetBlockProperty@{GetBlockProperty}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{GetBlockProperty()}{GetBlockProperty()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Id\+Block\+::\+Get\+Block\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemdf_1_1detail_a77d8f89f34dbdad6659eaa35fc6d5501}{Block\+Property\+List}} \&}]{dest }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a6ac894e32ba659b83a07b1f07a454e32}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_a22a24c266c2a0122d688cfdf1cad20aa}\label{classmdf_1_1detail_1_1IdBlock_a22a24c266c2a0122d688cfdf1cad20aa}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!IsFinalized@{IsFinalized}}
+\index{IsFinalized@{IsFinalized}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{IsFinalized()}{IsFinalized()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Id\+Block\+::\+Is\+Finalized (\begin{DoxyParamCaption}\item[{bool}]{finalized,  }\item[{std\+::\+FILE $\ast$}]{file,  }\item[{uint16\+\_\+t}]{standard\+\_\+flags,  }\item[{uint16\+\_\+t}]{custom\+\_\+flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_afe76d546a09f240fc878fa5e2eedc3b7}\label{classmdf_1_1detail_1_1IdBlock_afe76d546a09f240fc878fa5e2eedc3b7}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!IsFinalized@{IsFinalized}}
+\index{IsFinalized@{IsFinalized}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{IsFinalized()}{IsFinalized()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Id\+Block\+::\+Is\+Finalized (\begin{DoxyParamCaption}\item[{uint16\+\_\+t \&}]{standard\+\_\+flags,  }\item[{uint16\+\_\+t \&}]{custom\+\_\+flags }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_aa77bfdd7bd97b68b009f72f3c9b99b0a}\label{classmdf_1_1detail_1_1IdBlock_aa77bfdd7bd97b68b009f72f3c9b99b0a}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!MinorVersion@{MinorVersion}}
+\index{MinorVersion@{MinorVersion}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{MinorVersion()}{MinorVersion()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Id\+Block\+::\+Minor\+Version (\begin{DoxyParamCaption}\item[{int}]{minor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_a5155391d9e01caed6defedcf9e4300f5}\label{classmdf_1_1detail_1_1IdBlock_a5155391d9e01caed6defedcf9e4300f5}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!ProgramId@{ProgramId}}
+\index{ProgramId@{ProgramId}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{ProgramId()}{ProgramId()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Id\+Block\+::\+Program\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_a47e070fef78a57f8bd53d7d2115ddd54}\label{classmdf_1_1detail_1_1IdBlock_a47e070fef78a57f8bd53d7d2115ddd54}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!ProgramId@{ProgramId}}
+\index{ProgramId@{ProgramId}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{ProgramId()}{ProgramId()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Id\+Block\+::\+Program\+Id (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{program\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_a821a1a64035829b152788124f2ee675c}\label{classmdf_1_1detail_1_1IdBlock_a821a1a64035829b152788124f2ee675c}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!Read@{Read}}
+\index{Read@{Read}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Id\+Block\+::\+Read (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a3d958d9ba4a5f3552afa61018370e82d}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_a61560c3e3af15a1df5fd5aab209e5ec5}\label{classmdf_1_1detail_1_1IdBlock_a61560c3e3af15a1df5fd5aab209e5ec5}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!SetDefaultMdf3Values@{SetDefaultMdf3Values}}
+\index{SetDefaultMdf3Values@{SetDefaultMdf3Values}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{SetDefaultMdf3Values()}{SetDefaultMdf3Values()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Id\+Block\+::\+Set\+Default\+Mdf3\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_a4809bb679a7badbaadee5176607b0712}\label{classmdf_1_1detail_1_1IdBlock_a4809bb679a7badbaadee5176607b0712}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!VersionString@{VersionString}}
+\index{VersionString@{VersionString}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{VersionString()}{VersionString()}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Id\+Block\+::\+Version\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1IdBlock_a50c0578781a25271e788e0a7bfbbe7e5}\label{classmdf_1_1detail_1_1IdBlock_a50c0578781a25271e788e0a7bfbbe7e5}} 
+\index{mdf::detail::IdBlock@{mdf::detail::IdBlock}!Write@{Write}}
+\index{Write@{Write}!mdf::detail::IdBlock@{mdf::detail::IdBlock}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Id\+Block\+::\+Write (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a0513cb10839e0c50b18384c0283e5ec5}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{idblock_8h}{idblock.\+h}}\item 
+src/\mbox{\hyperlink{idblock_8cpp}{idblock.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,334 @@
+\hypertarget{classmdf_1_1detail_1_1Ca4Block}{}\doxysection{mdf\+::detail\+::Ca4\+Block Class Reference}
+\label{classmdf_1_1detail_1_1Ca4Block}\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+
+
+{\ttfamily \#include $<$ca4block.\+h$>$}
+
+
+
+Inheritance diagram for mdf\+::detail\+::Ca4\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmdf_1_1detail_1_1Ca4Block__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for mdf\+::detail\+::Ca4\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmdf_1_1detail_1_1Ca4Block__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_ab3c10d98c4b27f097c659e6733d8fb1f}{Cx4\+List}} = std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a504888096090fb0b037409cb89a4facc}{Ca4\+Block}} ()
+\item 
+int64\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_afd8115b4131788586ce3ae8bfe92e88c}{Index}} () const override
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a7a0bf8569f0562d5c05f10f273f9e672}{Block\+Type}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a288cf0cec8416a99a2727562e5a00894}{Type}} (Array\+Type type) override
+\item 
+Array\+Type \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a7e0e9c2d343a85ee66c578f45f522296}{Type}} () const override
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a1c37c4e75c7b4f06de698cf5b628c688}{Type\+As\+String}} () const
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a35a2ee71e0697b4f91d6ac3b53db4ea6}{Storage}} (Array\+Storage storage) override
+\item 
+Array\+Storage \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_ad6f46ab1ba2c41f8b9a7f4207e00f8b5}{Storage}} () const override
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a6f80e76375383bea2ce1d9da7ff9ace4}{Storage\+As\+String}} () const
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a8fb93c2e5128110aeb787a4e5955d86b}{Flags}} (uint32\+\_\+t flags) override
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a05a691375dcade7abdc0df11f565034d}{Flags}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_ad9640d901561fef9106b5d5a17a0b977}{Get\+Block\+Property}} (\mbox{\hyperlink{namespacemdf_1_1detail_a77d8f89f34dbdad6659eaa35fc6d5501}{Block\+Property\+List}} \&dest) const override
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a8703734970343a24c43f6124fdb6f8af}{Dimensions}} () const override
+\begin{DoxyCompactList}\small\item\em Number of dimensions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a398f4aff0bec6cb62e6ee40313a61be6}{Shape}} (const std\+::vector$<$ uint64\+\_\+t $>$ \&dim\+\_\+sizes) override
+\item 
+const std\+::vector$<$ uint64\+\_\+t $>$ \& \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a8e8faeb81284d0cf88288893e605e560}{Shape}} () const override
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a0c119679d526340a9fe81756d3223c47}{Dimension\+Size}} (size\+\_\+t dimension) const override
+\begin{DoxyCompactList}\small\item\em Size for a dimension. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a8058650397d7f77d203f2e813f195a10}{Sum\+Of\+Array}} () const override
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a83e96064a99ded7e23572c5eec33ba8e}{Product\+Of\+Array}} () const override
+\item 
+const std\+::vector$<$ double $>$ \& \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a1a11840cc657c77102a435ffee85aa60}{Axis\+Values}} () const override
+\begin{DoxyCompactList}\small\item\em Returns a list of axis values. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \& \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a38bf70f325a4b6b759032e122515c952}{Axis\+Values}} () override
+\begin{DoxyCompactList}\small\item\em Returns a list of axis values. \end{DoxyCompactList}\item 
+const std\+::vector$<$ uint64\+\_\+t $>$ \& \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_ab341c48ca2a9aef9f11465849173ef72}{Cycle\+Counts}} () const override
+\item 
+std\+::vector$<$ uint64\+\_\+t $>$ \& \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a0fea3880f0341db3fb66392f9174cbba}{Cycle\+Counts}} () override
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a0f48b5edfb931522716ad57895693d78}{Find}} (int64\+\_\+t index) const override
+\item 
+const \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_ab3c10d98c4b27f097c659e6733d8fb1f}{Cx4\+List}} \& \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a725fe7c08a7660f22c7cbced5a3955f3}{Cx4}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_ac5d4c60adaa88f311217adab5de75be2}{Read}} (std\+::\+FILE $\ast$file) override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a04dac7b67d95fc9b914bafeafabd9f8e}{Find\+All\+References}} (std\+::\+FILE $\ast$file)
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a749e03caae8c218d2a239822b7bfad70}{Write}} (std\+::\+FILE $\ast$file) override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_a00e2f4f4a2e243fb223c3795e0cec0dc}{Set\+Parent\+Channel}} (const \mbox{\hyperlink{classmdf_1_1detail_1_1Cn4Block}{Cn4\+Block}} $\ast$parent)
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_acad0fc1d3a8ee0f0c96d7c939ac3e3f6}{Prepare\+For\+Writing}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_ab3c10d98c4b27f097c659e6733d8fb1f}\label{classmdf_1_1detail_1_1Ca4Block_ab3c10d98c4b27f097c659e6733d8fb1f}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Cx4List@{Cx4List}}
+\index{Cx4List@{Cx4List}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Cx4List}{Cx4List}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_ab3c10d98c4b27f097c659e6733d8fb1f}{mdf\+::detail\+::\+Ca4\+Block\+::\+Cx4\+List}} =  std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}}$>$ $>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a504888096090fb0b037409cb89a4facc}\label{classmdf_1_1detail_1_1Ca4Block_a504888096090fb0b037409cb89a4facc}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Ca4Block@{Ca4Block}}
+\index{Ca4Block@{Ca4Block}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Ca4Block()}{Ca4Block()}}
+{\footnotesize\ttfamily mdf\+::detail\+::\+Ca4\+Block\+::\+Ca4\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a1a11840cc657c77102a435ffee85aa60}\label{classmdf_1_1detail_1_1Ca4Block_a1a11840cc657c77102a435ffee85aa60}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!AxisValues@{AxisValues}}
+\index{AxisValues@{AxisValues}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{AxisValues()}{AxisValues()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ double $>$ \& mdf\+::detail\+::\+Ca4\+Block\+::\+Axis\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Returns a list of axis values. 
+
+\begin{DoxyReturn}{Returns}
+List of axis values. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a38bf70f325a4b6b759032e122515c952}\label{classmdf_1_1detail_1_1Ca4Block_a38bf70f325a4b6b759032e122515c952}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!AxisValues@{AxisValues}}
+\index{AxisValues@{AxisValues}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{AxisValues()}{AxisValues()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ \& mdf\+::detail\+::\+Ca4\+Block\+::\+Axis\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Returns a list of axis values. 
+
+\begin{DoxyReturn}{Returns}
+List of axis values. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a7a0bf8569f0562d5c05f10f273f9e672}\label{classmdf_1_1detail_1_1Ca4Block_a7a0bf8569f0562d5c05f10f273f9e672}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!BlockType@{BlockType}}
+\index{BlockType@{BlockType}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{BlockType()}{BlockType()}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Ca4\+Block\+::\+Block\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_af5e322b3f10e54aa8caac98f0cb272ce}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a725fe7c08a7660f22c7cbced5a3955f3}\label{classmdf_1_1detail_1_1Ca4Block_a725fe7c08a7660f22c7cbced5a3955f3}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Cx4@{Cx4}}
+\index{Cx4@{Cx4}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Cx4()}{Cx4()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classmdf_1_1detail_1_1Ca4Block_ab3c10d98c4b27f097c659e6733d8fb1f}{Cx4\+List}}\& mdf\+::detail\+::\+Ca4\+Block\+::\+Cx4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_ab341c48ca2a9aef9f11465849173ef72}\label{classmdf_1_1detail_1_1Ca4Block_ab341c48ca2a9aef9f11465849173ef72}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!CycleCounts@{CycleCounts}}
+\index{CycleCounts@{CycleCounts}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{CycleCounts()}{CycleCounts()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ uint64\+\_\+t $>$ \& mdf\+::detail\+::\+Ca4\+Block\+::\+Cycle\+Counts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a0fea3880f0341db3fb66392f9174cbba}\label{classmdf_1_1detail_1_1Ca4Block_a0fea3880f0341db3fb66392f9174cbba}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!CycleCounts@{CycleCounts}}
+\index{CycleCounts@{CycleCounts}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{CycleCounts()}{CycleCounts()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ uint64\+\_\+t $>$ \& mdf\+::detail\+::\+Ca4\+Block\+::\+Cycle\+Counts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a8703734970343a24c43f6124fdb6f8af}\label{classmdf_1_1detail_1_1Ca4Block_a8703734970343a24c43f6124fdb6f8af}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Dimensions@{Dimensions}}
+\index{Dimensions@{Dimensions}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Dimensions()}{Dimensions()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Ca4\+Block\+::\+Dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Number of dimensions. 
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a0c119679d526340a9fe81756d3223c47}\label{classmdf_1_1detail_1_1Ca4Block_a0c119679d526340a9fe81756d3223c47}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!DimensionSize@{DimensionSize}}
+\index{DimensionSize@{DimensionSize}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{DimensionSize()}{DimensionSize()}}
+{\footnotesize\ttfamily uint64\+\_\+t mdf\+::detail\+::\+Ca4\+Block\+::\+Dimension\+Size (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{dimension }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Size for a dimension. 
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a0f48b5edfb931522716ad57895693d78}\label{classmdf_1_1detail_1_1Ca4Block_a0f48b5edfb931522716ad57895693d78}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Find@{Find}}
+\index{Find@{Find}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $\ast$ mdf\+::detail\+::\+Ca4\+Block\+::\+Find (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a435d646c7fe6f4f39153daacdae01824}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a04dac7b67d95fc9b914bafeafabd9f8e}\label{classmdf_1_1detail_1_1Ca4Block_a04dac7b67d95fc9b914bafeafabd9f8e}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!FindAllReferences@{FindAllReferences}}
+\index{FindAllReferences@{FindAllReferences}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{FindAllReferences()}{FindAllReferences()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ca4\+Block\+::\+Find\+All\+References (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a05a691375dcade7abdc0df11f565034d}\label{classmdf_1_1detail_1_1Ca4Block_a05a691375dcade7abdc0df11f565034d}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Flags@{Flags}}
+\index{Flags@{Flags}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Flags()}{Flags()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t mdf\+::detail\+::\+Ca4\+Block\+::\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a8fb93c2e5128110aeb787a4e5955d86b}\label{classmdf_1_1detail_1_1Ca4Block_a8fb93c2e5128110aeb787a4e5955d86b}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Flags@{Flags}}
+\index{Flags@{Flags}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Flags()}{Flags()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ca4\+Block\+::\+Flags (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_ad9640d901561fef9106b5d5a17a0b977}\label{classmdf_1_1detail_1_1Ca4Block_ad9640d901561fef9106b5d5a17a0b977}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!GetBlockProperty@{GetBlockProperty}}
+\index{GetBlockProperty@{GetBlockProperty}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{GetBlockProperty()}{GetBlockProperty()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ca4\+Block\+::\+Get\+Block\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemdf_1_1detail_a77d8f89f34dbdad6659eaa35fc6d5501}{Block\+Property\+List}} \&}]{dest }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a6ac894e32ba659b83a07b1f07a454e32}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_afd8115b4131788586ce3ae8bfe92e88c}\label{classmdf_1_1detail_1_1Ca4Block_afd8115b4131788586ce3ae8bfe92e88c}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Index@{Index}}
+\index{Index@{Index}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily int64\+\_\+t mdf\+::detail\+::\+Ca4\+Block\+::\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a712aed78b0f11c4105c2b65ecc79cc84}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_acad0fc1d3a8ee0f0c96d7c939ac3e3f6}\label{classmdf_1_1detail_1_1Ca4Block_acad0fc1d3a8ee0f0c96d7c939ac3e3f6}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!PrepareForWriting@{PrepareForWriting}}
+\index{PrepareForWriting@{PrepareForWriting}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{PrepareForWriting()}{PrepareForWriting()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ca4\+Block\+::\+Prepare\+For\+Writing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a83e96064a99ded7e23572c5eec33ba8e}\label{classmdf_1_1detail_1_1Ca4Block_a83e96064a99ded7e23572c5eec33ba8e}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!ProductOfArray@{ProductOfArray}}
+\index{ProductOfArray@{ProductOfArray}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{ProductOfArray()}{ProductOfArray()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Ca4\+Block\+::\+Product\+Of\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+Returns the product of the dimension sizes. \mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_ac5d4c60adaa88f311217adab5de75be2}\label{classmdf_1_1detail_1_1Ca4Block_ac5d4c60adaa88f311217adab5de75be2}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Read@{Read}}
+\index{Read@{Read}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Ca4\+Block\+::\+Read (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a3d958d9ba4a5f3552afa61018370e82d}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a00e2f4f4a2e243fb223c3795e0cec0dc}\label{classmdf_1_1detail_1_1Ca4Block_a00e2f4f4a2e243fb223c3795e0cec0dc}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!SetParentChannel@{SetParentChannel}}
+\index{SetParentChannel@{SetParentChannel}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{SetParentChannel()}{SetParentChannel()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ca4\+Block\+::\+Set\+Parent\+Channel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmdf_1_1detail_1_1Cn4Block}{Cn4\+Block}} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a8e8faeb81284d0cf88288893e605e560}\label{classmdf_1_1detail_1_1Ca4Block_a8e8faeb81284d0cf88288893e605e560}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Shape@{Shape}}
+\index{Shape@{Shape}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Shape()}{Shape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ uint64\+\_\+t $>$ \& mdf\+::detail\+::\+Ca4\+Block\+::\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a398f4aff0bec6cb62e6ee40313a61be6}\label{classmdf_1_1detail_1_1Ca4Block_a398f4aff0bec6cb62e6ee40313a61be6}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Shape@{Shape}}
+\index{Shape@{Shape}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Shape()}{Shape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ca4\+Block\+::\+Shape (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ uint64\+\_\+t $>$ \&}]{dim\+\_\+sizes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_ad6f46ab1ba2c41f8b9a7f4207e00f8b5}\label{classmdf_1_1detail_1_1Ca4Block_ad6f46ab1ba2c41f8b9a7f4207e00f8b5}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Storage@{Storage}}
+\index{Storage@{Storage}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Storage()}{Storage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Array\+Storage mdf\+::detail\+::\+Ca4\+Block\+::\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a35a2ee71e0697b4f91d6ac3b53db4ea6}\label{classmdf_1_1detail_1_1Ca4Block_a35a2ee71e0697b4f91d6ac3b53db4ea6}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Storage@{Storage}}
+\index{Storage@{Storage}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Storage()}{Storage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ca4\+Block\+::\+Storage (\begin{DoxyParamCaption}\item[{Array\+Storage}]{storage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a6f80e76375383bea2ce1d9da7ff9ace4}\label{classmdf_1_1detail_1_1Ca4Block_a6f80e76375383bea2ce1d9da7ff9ace4}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!StorageAsString@{StorageAsString}}
+\index{StorageAsString@{StorageAsString}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{StorageAsString()}{StorageAsString()}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Ca4\+Block\+::\+Storage\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a8058650397d7f77d203f2e813f195a10}\label{classmdf_1_1detail_1_1Ca4Block_a8058650397d7f77d203f2e813f195a10}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!SumOfArray@{SumOfArray}}
+\index{SumOfArray@{SumOfArray}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{SumOfArray()}{SumOfArray()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Ca4\+Block\+::\+Sum\+Of\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+Returns the summation of the dimension sizes. \mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a7e0e9c2d343a85ee66c578f45f522296}\label{classmdf_1_1detail_1_1Ca4Block_a7e0e9c2d343a85ee66c578f45f522296}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Type@{Type}}
+\index{Type@{Type}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Type()}{Type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Array\+Type mdf\+::detail\+::\+Ca4\+Block\+::\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a288cf0cec8416a99a2727562e5a00894}\label{classmdf_1_1detail_1_1Ca4Block_a288cf0cec8416a99a2727562e5a00894}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Type@{Type}}
+\index{Type@{Type}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Type()}{Type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ca4\+Block\+::\+Type (\begin{DoxyParamCaption}\item[{Array\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a1c37c4e75c7b4f06de698cf5b628c688}\label{classmdf_1_1detail_1_1Ca4Block_a1c37c4e75c7b4f06de698cf5b628c688}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!TypeAsString@{TypeAsString}}
+\index{TypeAsString@{TypeAsString}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{TypeAsString()}{TypeAsString()}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Ca4\+Block\+::\+Type\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ca4Block_a749e03caae8c218d2a239822b7bfad70}\label{classmdf_1_1detail_1_1Ca4Block_a749e03caae8c218d2a239822b7bfad70}} 
+\index{mdf::detail::Ca4Block@{mdf::detail::Ca4Block}!Write@{Write}}
+\index{Write@{Write}!mdf::detail::Ca4Block@{mdf::detail::Ca4Block}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Ca4\+Block\+::\+Write (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a0513cb10839e0c50b18384c0283e5ec5}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ca4block_8h}{ca4block.\+h}}\item 
+src/\mbox{\hyperlink{ca4block_8cpp}{ca4block.\+cpp}}\end{DoxyCompactItemize}

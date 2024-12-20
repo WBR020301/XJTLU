@@ -1,0 +1,103 @@
+\hypertarget{classmdf_1_1detail_1_1ReadCache}{}\doxysection{mdf\+::detail\+::Read\+Cache Class Reference}
+\label{classmdf_1_1detail_1_1ReadCache}\index{mdf::detail::ReadCache@{mdf::detail::ReadCache}}
+
+
+{\ttfamily \#include $<$readcache.\+h$>$}
+
+
+
+Collaboration diagram for mdf\+::detail\+::Read\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classmdf_1_1detail_1_1ReadCache__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1ReadCache_a06cad7cbbe8ec1d7c9c03decae976ecb}{Read\+Cache}} ()=delete
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1ReadCache_a6b42c4d49e24d4f6021d90890dfc6969}{Read\+Cache}} (\mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $\ast$block, FILE $\ast$file)
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1ReadCache_aaf303bd2a21a77772f05f950b41cbaf2}{Parse\+Record}} ()
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1ReadCache_a30018c6db3025025f5a74d76e93c0543}{Parse\+Range\+Record}} (\mbox{\hyperlink{classmdf_1_1DgRange}{Dg\+Range}} \&range)
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1ReadCache_abfbd682737482d8a04f216f45c9dd33c}{Parse\+Vlsd\+Cg\+Data}} ()
+\item 
+bool \mbox{\hyperlink{classmdf_1_1detail_1_1ReadCache_a77e96e689bdd5500219461946a4b1b0e}{Parse\+Signal\+Data}} ()
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1ReadCache_a9fb4de030432dbcfd22d6de2bc89eeca}{Set\+Record\+Id}} (uint64\+\_\+t record\+\_\+id)
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1ReadCache_a52f369ecc69fc1cb1f5168f715ea2d01}{Set\+Offset\+Filter}} (const std\+::vector$<$ uint64\+\_\+t $>$ \&offset\+\_\+list)
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1ReadCache_aff62e9660378bee55d9a8510035c8a29}{Set\+Callback}} (const std\+::function$<$ void(uint64\+\_\+t, const std\+::vector$<$ uint8\+\_\+t $>$ \&)$>$ \&callback)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1ReadCache_a06cad7cbbe8ec1d7c9c03decae976ecb}\label{classmdf_1_1detail_1_1ReadCache_a06cad7cbbe8ec1d7c9c03decae976ecb}} 
+\index{mdf::detail::ReadCache@{mdf::detail::ReadCache}!ReadCache@{ReadCache}}
+\index{ReadCache@{ReadCache}!mdf::detail::ReadCache@{mdf::detail::ReadCache}}
+\doxysubsubsection{\texorpdfstring{ReadCache()}{ReadCache()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mdf\+::detail\+::\+Read\+Cache\+::\+Read\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1ReadCache_a6b42c4d49e24d4f6021d90890dfc6969}\label{classmdf_1_1detail_1_1ReadCache_a6b42c4d49e24d4f6021d90890dfc6969}} 
+\index{mdf::detail::ReadCache@{mdf::detail::ReadCache}!ReadCache@{ReadCache}}
+\index{ReadCache@{ReadCache}!mdf::detail::ReadCache@{mdf::detail::ReadCache}}
+\doxysubsubsection{\texorpdfstring{ReadCache()}{ReadCache()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mdf\+::detail\+::\+Read\+Cache\+::\+Read\+Cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $\ast$}]{block,  }\item[{FILE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1ReadCache_a30018c6db3025025f5a74d76e93c0543}\label{classmdf_1_1detail_1_1ReadCache_a30018c6db3025025f5a74d76e93c0543}} 
+\index{mdf::detail::ReadCache@{mdf::detail::ReadCache}!ParseRangeRecord@{ParseRangeRecord}}
+\index{ParseRangeRecord@{ParseRangeRecord}!mdf::detail::ReadCache@{mdf::detail::ReadCache}}
+\doxysubsubsection{\texorpdfstring{ParseRangeRecord()}{ParseRangeRecord()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Read\+Cache\+::\+Parse\+Range\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmdf_1_1DgRange}{Dg\+Range}} \&}]{range }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1ReadCache_aaf303bd2a21a77772f05f950b41cbaf2}\label{classmdf_1_1detail_1_1ReadCache_aaf303bd2a21a77772f05f950b41cbaf2}} 
+\index{mdf::detail::ReadCache@{mdf::detail::ReadCache}!ParseRecord@{ParseRecord}}
+\index{ParseRecord@{ParseRecord}!mdf::detail::ReadCache@{mdf::detail::ReadCache}}
+\doxysubsubsection{\texorpdfstring{ParseRecord()}{ParseRecord()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Read\+Cache\+::\+Parse\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1ReadCache_a77e96e689bdd5500219461946a4b1b0e}\label{classmdf_1_1detail_1_1ReadCache_a77e96e689bdd5500219461946a4b1b0e}} 
+\index{mdf::detail::ReadCache@{mdf::detail::ReadCache}!ParseSignalData@{ParseSignalData}}
+\index{ParseSignalData@{ParseSignalData}!mdf::detail::ReadCache@{mdf::detail::ReadCache}}
+\doxysubsubsection{\texorpdfstring{ParseSignalData()}{ParseSignalData()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Read\+Cache\+::\+Parse\+Signal\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1ReadCache_abfbd682737482d8a04f216f45c9dd33c}\label{classmdf_1_1detail_1_1ReadCache_abfbd682737482d8a04f216f45c9dd33c}} 
+\index{mdf::detail::ReadCache@{mdf::detail::ReadCache}!ParseVlsdCgData@{ParseVlsdCgData}}
+\index{ParseVlsdCgData@{ParseVlsdCgData}!mdf::detail::ReadCache@{mdf::detail::ReadCache}}
+\doxysubsubsection{\texorpdfstring{ParseVlsdCgData()}{ParseVlsdCgData()}}
+{\footnotesize\ttfamily bool mdf\+::detail\+::\+Read\+Cache\+::\+Parse\+Vlsd\+Cg\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1ReadCache_aff62e9660378bee55d9a8510035c8a29}\label{classmdf_1_1detail_1_1ReadCache_aff62e9660378bee55d9a8510035c8a29}} 
+\index{mdf::detail::ReadCache@{mdf::detail::ReadCache}!SetCallback@{SetCallback}}
+\index{SetCallback@{SetCallback}!mdf::detail::ReadCache@{mdf::detail::ReadCache}}
+\doxysubsubsection{\texorpdfstring{SetCallback()}{SetCallback()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Read\+Cache\+::\+Set\+Callback (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(uint64\+\_\+t, const std\+::vector$<$ uint8\+\_\+t $>$ \&)$>$ \&}]{callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1ReadCache_a52f369ecc69fc1cb1f5168f715ea2d01}\label{classmdf_1_1detail_1_1ReadCache_a52f369ecc69fc1cb1f5168f715ea2d01}} 
+\index{mdf::detail::ReadCache@{mdf::detail::ReadCache}!SetOffsetFilter@{SetOffsetFilter}}
+\index{SetOffsetFilter@{SetOffsetFilter}!mdf::detail::ReadCache@{mdf::detail::ReadCache}}
+\doxysubsubsection{\texorpdfstring{SetOffsetFilter()}{SetOffsetFilter()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Read\+Cache\+::\+Set\+Offset\+Filter (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ uint64\+\_\+t $>$ \&}]{offset\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1ReadCache_a9fb4de030432dbcfd22d6de2bc89eeca}\label{classmdf_1_1detail_1_1ReadCache_a9fb4de030432dbcfd22d6de2bc89eeca}} 
+\index{mdf::detail::ReadCache@{mdf::detail::ReadCache}!SetRecordId@{SetRecordId}}
+\index{SetRecordId@{SetRecordId}!mdf::detail::ReadCache@{mdf::detail::ReadCache}}
+\doxysubsubsection{\texorpdfstring{SetRecordId()}{SetRecordId()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Read\+Cache\+::\+Set\+Record\+Id (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{record\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{readcache_8h}{readcache.\+h}}\item 
+src/\mbox{\hyperlink{readcache_8cpp}{readcache.\+cpp}}\end{DoxyCompactItemize}

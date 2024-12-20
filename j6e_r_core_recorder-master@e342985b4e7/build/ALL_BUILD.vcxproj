@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63F3CC5B-C2F0-30E8-BA06-15A25CC9BBD8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\include;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\include;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\include;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\include;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\mdf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\bin\cmake.exe -SC:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7 -BC:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/build --check-stamp-file C:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\bin\cmake.exe -SC:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7 -BC:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/build --check-stamp-file C:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\bin\cmake.exe -SC:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7 -BC:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/build --check-stamp-file C:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\bin\cmake.exe -SC:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7 -BC:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/build --check-stamp-file C:/Users/WBG3SZH/Desktop/j6e_r_core_recorder-master@e342985b4e7/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Users\WBG3SZH\Desktop\SoftWare\cmake-3.30.1-windows-x86_64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\ZERO_CHECK.vcxproj">
+      <Project>{EE511813-2916-350C-AB18-EC38582C7A23}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\Mf4Writer.vcxproj">
+      <Project>{2942989E-F9EA-363F-A125-1C26827BA748}</Project>
+      <Name>Mf4Writer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\src\mdf.vcxproj">
+      <Project>{97DAF8B8-FFC8-3E55-9E43-F4E7D58FD431}</Project>
+      <Name>mdf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\mdflib\mdflib.vcxproj">
+      <Project>{C15539A6-E41C-3960-BE44-53459BFE2CCE}</Project>
+      <Name>mdflib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\WBG3SZH\Desktop\j6e_r_core_recorder-master@e342985b4e7\build\src\utils\utils.vcxproj">
+      <Project>{9B3B3F49-F20F-3957-A42A-1236B2596086}</Project>
+      <Name>utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

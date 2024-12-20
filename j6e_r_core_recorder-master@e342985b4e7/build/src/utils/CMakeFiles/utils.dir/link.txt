@@ -1,0 +1,2 @@
+C:\Users\WBG3SZH\Desktop\SoftWare\mingw64\bin\ar.exe qc libutils.a CMakeFiles/utils.dir/ilogger.cpp.obj CMakeFiles/utils.dir/logconfig.cpp.obj CMakeFiles/utils.dir/logconsole.cpp.obj CMakeFiles/utils.dir/logfile.cpp.obj CMakeFiles/utils.dir/logging.cpp.obj CMakeFiles/utils.dir/logmessage.cpp.obj CMakeFiles/utils.dir/logstream.cpp.obj CMakeFiles/utils.dir/stringutil.cpp.obj CMakeFiles/utils.dir/timestamp.cpp.obj
+C:\Users\WBG3SZH\Desktop\SoftWare\mingw64\bin\ranlib.exe libutils.a

@@ -1,0 +1,264 @@
+\hypertarget{classmdf_1_1detail_1_1Ch4Block}{}\doxysection{mdf\+::detail\+::Ch4\+Block Class Reference}
+\label{classmdf_1_1detail_1_1Ch4Block}\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+
+
+{\ttfamily \#include $<$ch4block.\+h$>$}
+
+
+
+Inheritance diagram for mdf\+::detail\+::Ch4\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmdf_1_1detail_1_1Ch4Block__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for mdf\+::detail\+::Ch4\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmdf_1_1detail_1_1Ch4Block__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_aa673fdb36c0ddc6ac49958362314b389}{Ch4\+List}} = std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block}{Ch4\+Block}} $>$ $>$
+\item 
+using \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_aae569de1b104f15a71403cc6a8b63118}{Ref\+List}} = std\+::vector$<$ int64\+\_\+t $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_abfad50504f803a3c8440cbdfb3702ef7}{Ch4\+Block}} ()
+\item 
+int64\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a821319dcd3514f0e94213f71dd5a99fe}{Index}} () const override
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a8a48766d5e2286e1234708901e27e52f}{Block\+Type}} () const override
+\item 
+const std\+::string \& \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a65f5511a19e49574e604abe2fad42b15}{Name}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_adf7bdf04ed0f27a70aa24115ced9d303}{Name}} (const std\+::string \&name) override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_ac354f59795d3db95270ca8845a512a5d}{Type}} (Ch\+Type type) override
+\item 
+Ch\+Type \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_ac73a5f483847261e0fcb596bc7d8bd17}{Type}} () const override
+\item 
+std\+::string \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_ac6a369b839b7d201f4f2b56790c04076}{Description}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a662bdce44598a61d42f0513d77d06a81}{Description}} (const std\+::string \&desc) override
+\item 
+IMeta\+Data $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a7cef1e52a0764a4d12c4edbc11cb9ade}{Create\+Meta\+Data}} () override
+\item 
+IMeta\+Data $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a42240f4959f0606dcb7f2cb3ef687964}{Meta\+Data}} () const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a024a90a32f78e5e4750c522f836a5be4}{Add\+Element\+Link}} (const Element\+Link \&element) override
+\item 
+const std\+::vector$<$ Element\+Link $>$ \& \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a2ad4454af8a48224d48c3aee906bcabf}{Element\+Links}} () const override
+\item 
+const \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_aa673fdb36c0ddc6ac49958362314b389}{Ch4\+List}} \& \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a3c43581237bfbd6ab00895ba7e44a57f}{Ch}} () const
+\item 
+\mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a84a4861746665f3334da35c5afcbbc97}{Find}} (int64\+\_\+t index) const override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a4a488610db6ecec85f9f11819c60c57d}{Get\+Block\+Property}} (\mbox{\hyperlink{namespacemdf_1_1detail_a77d8f89f34dbdad6659eaa35fc6d5501}{Block\+Property\+List}} \&dest) const override
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_ab53394b555fe902200d8162de9081724}{Read}} (std\+::\+FILE $\ast$file) override
+\item 
+size\+\_\+t \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a4d3e651dd09470aebec694ca060c928a}{Write}} (std\+::\+FILE $\ast$file) override
+\item 
+void \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_ac597bbb6c265049654cbb6a1fe56eee7}{Find\+Referenced\+Blocks}} (const \mbox{\hyperlink{classmdf_1_1detail_1_1Hd4Block}{Hd4\+Block}} \&hd4)
+\item 
+IChannel\+Hierarchy $\ast$ \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a5582d7abd60cd4fccae45a1644152ce7}{Create\+Channel\+Hierarchy}} () override
+\item 
+std\+::vector$<$ IChannel\+Hierarchy $\ast$ $>$ \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_a3c6dbfdd690d76278c09330f17d878e9}{Channel\+Hierarchies}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_aa673fdb36c0ddc6ac49958362314b389}\label{classmdf_1_1detail_1_1Ch4Block_aa673fdb36c0ddc6ac49958362314b389}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Ch4List@{Ch4List}}
+\index{Ch4List@{Ch4List}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Ch4List}{Ch4List}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_aa673fdb36c0ddc6ac49958362314b389}{mdf\+::detail\+::\+Ch4\+Block\+::\+Ch4\+List}} =  std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block}{Ch4\+Block}}$>$ $>$}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_aae569de1b104f15a71403cc6a8b63118}\label{classmdf_1_1detail_1_1Ch4Block_aae569de1b104f15a71403cc6a8b63118}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!RefList@{RefList}}
+\index{RefList@{RefList}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{RefList}{RefList}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_aae569de1b104f15a71403cc6a8b63118}{mdf\+::detail\+::\+Ch4\+Block\+::\+Ref\+List}} =  std\+::vector$<$int64\+\_\+t$>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_abfad50504f803a3c8440cbdfb3702ef7}\label{classmdf_1_1detail_1_1Ch4Block_abfad50504f803a3c8440cbdfb3702ef7}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Ch4Block@{Ch4Block}}
+\index{Ch4Block@{Ch4Block}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Ch4Block()}{Ch4Block()}}
+{\footnotesize\ttfamily mdf\+::detail\+::\+Ch4\+Block\+::\+Ch4\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a024a90a32f78e5e4750c522f836a5be4}\label{classmdf_1_1detail_1_1Ch4Block_a024a90a32f78e5e4750c522f836a5be4}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!AddElementLink@{AddElementLink}}
+\index{AddElementLink@{AddElementLink}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{AddElementLink()}{AddElementLink()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ch4\+Block\+::\+Add\+Element\+Link (\begin{DoxyParamCaption}\item[{const Element\+Link \&}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a8a48766d5e2286e1234708901e27e52f}\label{classmdf_1_1detail_1_1Ch4Block_a8a48766d5e2286e1234708901e27e52f}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!BlockType@{BlockType}}
+\index{BlockType@{BlockType}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{BlockType()}{BlockType()}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Ch4\+Block\+::\+Block\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_af5e322b3f10e54aa8caac98f0cb272ce}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a3c43581237bfbd6ab00895ba7e44a57f}\label{classmdf_1_1detail_1_1Ch4Block_a3c43581237bfbd6ab00895ba7e44a57f}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Ch@{Ch}}
+\index{Ch@{Ch}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Ch()}{Ch()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classmdf_1_1detail_1_1Ch4Block_aa673fdb36c0ddc6ac49958362314b389}{Ch4\+List}}\& mdf\+::detail\+::\+Ch4\+Block\+::\+Ch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a3c6dbfdd690d76278c09330f17d878e9}\label{classmdf_1_1detail_1_1Ch4Block_a3c6dbfdd690d76278c09330f17d878e9}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!ChannelHierarchies@{ChannelHierarchies}}
+\index{ChannelHierarchies@{ChannelHierarchies}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{ChannelHierarchies()}{ChannelHierarchies()}}
+{\footnotesize\ttfamily std\+::vector$<$ IChannel\+Hierarchy $\ast$ $>$ mdf\+::detail\+::\+Ch4\+Block\+::\+Channel\+Hierarchies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a5582d7abd60cd4fccae45a1644152ce7}\label{classmdf_1_1detail_1_1Ch4Block_a5582d7abd60cd4fccae45a1644152ce7}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!CreateChannelHierarchy@{CreateChannelHierarchy}}
+\index{CreateChannelHierarchy@{CreateChannelHierarchy}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{CreateChannelHierarchy()}{CreateChannelHierarchy()}}
+{\footnotesize\ttfamily IChannel\+Hierarchy $\ast$ mdf\+::detail\+::\+Ch4\+Block\+::\+Create\+Channel\+Hierarchy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a7cef1e52a0764a4d12c4edbc11cb9ade}\label{classmdf_1_1detail_1_1Ch4Block_a7cef1e52a0764a4d12c4edbc11cb9ade}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!CreateMetaData@{CreateMetaData}}
+\index{CreateMetaData@{CreateMetaData}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{CreateMetaData()}{CreateMetaData()}}
+{\footnotesize\ttfamily IMeta\+Data $\ast$ mdf\+::detail\+::\+Ch4\+Block\+::\+Create\+Meta\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a4ef06ab5c0a446e8c8ff18b5772f1216}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_ac6a369b839b7d201f4f2b56790c04076}\label{classmdf_1_1detail_1_1Ch4Block_ac6a369b839b7d201f4f2b56790c04076}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Description@{Description}}
+\index{Description@{Description}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Description()}{Description()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string mdf\+::detail\+::\+Ch4\+Block\+::\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a662bdce44598a61d42f0513d77d06a81}\label{classmdf_1_1detail_1_1Ch4Block_a662bdce44598a61d42f0513d77d06a81}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Description@{Description}}
+\index{Description@{Description}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Description()}{Description()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ch4\+Block\+::\+Description (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a2ad4454af8a48224d48c3aee906bcabf}\label{classmdf_1_1detail_1_1Ch4Block_a2ad4454af8a48224d48c3aee906bcabf}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!ElementLinks@{ElementLinks}}
+\index{ElementLinks@{ElementLinks}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{ElementLinks()}{ElementLinks()}}
+{\footnotesize\ttfamily const std\+::vector$<$ Element\+Link $>$ \& mdf\+::detail\+::\+Ch4\+Block\+::\+Element\+Links (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a84a4861746665f3334da35c5afcbbc97}\label{classmdf_1_1detail_1_1Ch4Block_a84a4861746665f3334da35c5afcbbc97}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Find@{Find}}
+\index{Find@{Find}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock}{Mdf\+Block}} $\ast$ mdf\+::detail\+::\+Ch4\+Block\+::\+Find (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a435d646c7fe6f4f39153daacdae01824}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_ac597bbb6c265049654cbb6a1fe56eee7}\label{classmdf_1_1detail_1_1Ch4Block_ac597bbb6c265049654cbb6a1fe56eee7}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!FindReferencedBlocks@{FindReferencedBlocks}}
+\index{FindReferencedBlocks@{FindReferencedBlocks}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{FindReferencedBlocks()}{FindReferencedBlocks()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ch4\+Block\+::\+Find\+Referenced\+Blocks (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmdf_1_1detail_1_1Hd4Block}{Hd4\+Block}} \&}]{hd4 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a4a488610db6ecec85f9f11819c60c57d}\label{classmdf_1_1detail_1_1Ch4Block_a4a488610db6ecec85f9f11819c60c57d}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!GetBlockProperty@{GetBlockProperty}}
+\index{GetBlockProperty@{GetBlockProperty}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{GetBlockProperty()}{GetBlockProperty()}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ch4\+Block\+::\+Get\+Block\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemdf_1_1detail_a77d8f89f34dbdad6659eaa35fc6d5501}{Block\+Property\+List}} \&}]{dest }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a6ac894e32ba659b83a07b1f07a454e32}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a821319dcd3514f0e94213f71dd5a99fe}\label{classmdf_1_1detail_1_1Ch4Block_a821319dcd3514f0e94213f71dd5a99fe}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Index@{Index}}
+\index{Index@{Index}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily int64\+\_\+t mdf\+::detail\+::\+Ch4\+Block\+::\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a712aed78b0f11c4105c2b65ecc79cc84}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a42240f4959f0606dcb7f2cb3ef687964}\label{classmdf_1_1detail_1_1Ch4Block_a42240f4959f0606dcb7f2cb3ef687964}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!MetaData@{MetaData}}
+\index{MetaData@{MetaData}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{MetaData()}{MetaData()}}
+{\footnotesize\ttfamily IMeta\+Data $\ast$ mdf\+::detail\+::\+Ch4\+Block\+::\+Meta\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a9d2cd0b498a8aaa2fd5d6009304ab82f}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a65f5511a19e49574e604abe2fad42b15}\label{classmdf_1_1detail_1_1Ch4Block_a65f5511a19e49574e604abe2fad42b15}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Name@{Name}}
+\index{Name@{Name}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Name()}{Name()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::string \& mdf\+::detail\+::\+Ch4\+Block\+::\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_adf7bdf04ed0f27a70aa24115ced9d303}\label{classmdf_1_1detail_1_1Ch4Block_adf7bdf04ed0f27a70aa24115ced9d303}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Name@{Name}}
+\index{Name@{Name}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Name()}{Name()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ch4\+Block\+::\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_ab53394b555fe902200d8162de9081724}\label{classmdf_1_1detail_1_1Ch4Block_ab53394b555fe902200d8162de9081724}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Read@{Read}}
+\index{Read@{Read}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Ch4\+Block\+::\+Read (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a3d958d9ba4a5f3552afa61018370e82d}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_ac73a5f483847261e0fcb596bc7d8bd17}\label{classmdf_1_1detail_1_1Ch4Block_ac73a5f483847261e0fcb596bc7d8bd17}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Type@{Type}}
+\index{Type@{Type}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Type()}{Type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ch\+Type mdf\+::detail\+::\+Ch4\+Block\+::\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_ac354f59795d3db95270ca8845a512a5d}\label{classmdf_1_1detail_1_1Ch4Block_ac354f59795d3db95270ca8845a512a5d}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Type@{Type}}
+\index{Type@{Type}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Type()}{Type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mdf\+::detail\+::\+Ch4\+Block\+::\+Type (\begin{DoxyParamCaption}\item[{Ch\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{classmdf_1_1detail_1_1Ch4Block_a4d3e651dd09470aebec694ca060c928a}\label{classmdf_1_1detail_1_1Ch4Block_a4d3e651dd09470aebec694ca060c928a}} 
+\index{mdf::detail::Ch4Block@{mdf::detail::Ch4Block}!Write@{Write}}
+\index{Write@{Write}!mdf::detail::Ch4Block@{mdf::detail::Ch4Block}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily size\+\_\+t mdf\+::detail\+::\+Ch4\+Block\+::\+Write (\begin{DoxyParamCaption}\item[{std\+::\+FILE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classmdf_1_1detail_1_1MdfBlock_a0513cb10839e0c50b18384c0283e5ec5}{mdf\+::detail\+::\+Mdf\+Block}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ch4block_8h}{ch4block.\+h}}\item 
+src/\mbox{\hyperlink{ch4block_8cpp}{ch4block.\+cpp}}\end{DoxyCompactItemize}
