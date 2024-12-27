@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <!-- Properties can be used to define reusable values -->
+    <Properties>
+        <Property name="LOG_FILE">${sys:user.home}/logs/hmi-gateway.log</Property>
+        <Property name="LOG_PATTERN_LONG">%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{12} - %msg%n</Property>
+        <Property name="LOG_PATTERN_SHORT">%d{mm:ss.SSS} %-5level %logger{12} - %msg%n</Property>
+        <Property name="LOG_FILE_PATTERN">${sys:user.home}/logs/hmi-gateway-%d{yyyy-MM-dd}.log.gz</Property>
+    </Properties>
+
+    <!-- Appenders -->
+    <Appenders>
+        <!-- Console Appender for logging to the console -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN_SHORT}" />
+        </Console>
+        <!-- Rolling File Appender for writing logs to a file -->
+        <RollingFile name="FileAppender" fileName="${LOG_FILE}" filePattern="${LOG_FILE_PATTERN}">
+            <PatternLayout pattern="${LOG_PATTERN_LONG}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="32MB" />
+            </Policies>
+        </RollingFile>
+        <Async name="AsyncFileAppender" bufferSize="1024">
+            <AppenderRef ref="FileAppender" />
+        </Async>
+    </Appenders>
+
+    <!-- Loggers -->
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="AsyncFileAppender" />
+        </Root>
+        <Logger name="com.bosch.pmt.hmi.http" level="DEBUG" additivity="false">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="AsyncFileAppender" />
+        </Logger>
+        <Logger name="com.bosch.pmt.hmi.android" level="DEBUG" additivity="false">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="AsyncFileAppender" />
+        </Logger>
+    </Loggers>
+</Configuration>

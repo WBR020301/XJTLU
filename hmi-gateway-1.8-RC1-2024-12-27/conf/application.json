@@ -1,0 +1,118 @@
+{
+  "multiPathRouter": false,
+  "lcdEnabled": false,
+  "performanceEnabled": true,
+
+  "discoveryConfiguration": {
+    "enabled": true,
+    "description": "Multicast service used for service casting",
+    "address": "239.0.0.198",
+    "port": 18085,
+    "cycle": 50000,
+    "networkInterface": "wlan0"
+  },
+  "memoryPoolConfiguration": {
+    "description": "a global byte buffer pool configuration",
+    "poolSize": 1024,
+    "bufferSize": 1472,
+    "queueSize": 32766,
+    "direct": true
+  },
+  "routerConfigurations": [
+    {
+      "type": "zmq",
+      "impl": "jerozmq",
+      "enabled": false,
+      "networkInterface": "vlan62",
+      "silence": 5000,
+      "port": 9997
+    },
+    {
+      "type": "zmq",
+      "enabled": true,
+      "impl": "jerozmq",
+      "networkInterface": "wlan0",
+      "port": 9998,
+      "silence": 5000,
+      "broadcast": true
+    }
+  ],
+  "monitorConfiguration": {
+    "description": "network performance monitor configuration",
+    "cycle": 5000,
+    "maxRetry": 10,
+    "ttl": 50
+  },
+  "androidClientConfiguration": {
+    "description": "android remote ADB client configuration",
+    "enabled": true,
+    "address": "localhost",
+    "port": 5555,
+    "localDir": "/home/pi/AutoSdkData",
+    "remoteDir": "/storage/emulated/0/AutoSdkData/route",
+    "bin": "/opt/rpiadb",
+    "initialDelay": 4000,
+    "interval": 8000,
+    "routeSyncEnabled": true,
+    "maxRetry": 2,
+    "autoClean": true,
+    "notify": true
+  },
+  "httpServerConfiguration": {
+    "enabled": true,
+    "port": 18086,
+    "networkInterface": "wlan0",
+    "htdocs": "htdocs"
+  },
+  "webSocketServerConfiguration": {
+    "enabled": true,
+    "port": 9999,
+    "networkInterface": "wlan0"
+  },
+  "sshClientConfiguration": {
+    "host": "192.168.62.11",
+    "port": 22,
+    "user": "root",
+    "password": "",
+    "timeout": 8000,
+    "interval": 500,
+    "routeGenCmd": "route_gen_arch5.0",
+    "routeGenTemplate": "cd /ota/output;source ./scripts/setup_runtime_env.sh;/map/nilite/bin/{0} /map/nilite/route/{1} 2>&1",
+    "routeJsonDir": "/map/nilite/route/"
+  },
+  "someipConfiguration": {
+    "mode": "simulation",
+    "loop": 1,
+    "measurement": "/home/pi/pcap",
+    "onChanges": [
+      "0xAB028001",
+      "0xAB028002",
+      "0xAB028003",
+      "0xAB028004",
+      "0xAB028005",
+      "0xAB028006",
+      "0xAB028007",
+      "0xAB028008",
+      "0xAB028009",
+      "0xAB02800A",
+      "0xAB02800B",
+      "0xAB02800C",
+      "0xAB02800D"
+    ]
+  },
+  "staticObjectSmooth": {
+    "enabled": false,
+    "messageId": "0xAB008001",
+    "sampleSize": 8
+  },
+  "dynamicObjectSmooth": {
+    "enabled": false,
+    "messageId": "0xAB008002",
+    "sampleSize": 8
+  },
+  "laneSmoothConfiguration": {
+    "enabled": false,
+    "messageId": "0xAB008003",
+    "sampleSize": 8
+  }
+}

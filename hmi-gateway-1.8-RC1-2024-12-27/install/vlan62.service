@@ -1,0 +1,14 @@
+[Unit]
+Description=Setup VLAN 62 on eth0
+After=network.target
+
+[Service]
+Type=oneshot
+#ExecStart=/sbin/ip link add link eth0 name vlan62 type vlan id 62
+#ExecStart=/sbin/ip link set dev vlan62 up
+#ExecStart=/sbin/ip addr add 192.168.62.33/24 dev vlan62
+ExecStart=/bin/sh -c 'if ! ip link show vlan62 &> /dev/null; then /sbin/ip link add link eth0 name vlan62 type vlan id 62 && /sbin/ip link set dev vlan62 up; fi && if ! ip addr show vlan62 | grep -q "192.168.62.33/24"; then /sbin/ip addr add 192.168.62.33/24 dev vlan62; fi'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
